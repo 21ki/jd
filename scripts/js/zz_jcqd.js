@@ -37,7 +37,7 @@ let check_list = [
 				},
                 //第二个机场，以此类推。
 				{
-			      name: "ikuuu机场",
+			      	  name: "ikuuu机场",
 				  email: "21kixc@gmail.com",
 				  pwd: "xiaofan@1",
 				  login_url: "https://ovo.ecyjc.com/auth/login",
@@ -45,7 +45,7 @@ let check_list = [
 				},
                  //第三个机场，以此类推。
 				{
-			      name: "几鸡Mary机场",
+			          name: "几鸡Mary机场",
 				  email: "myki",
 				  pwd: "xiaofan@1",
 				  login_url: "https://b.luxury/signin",
