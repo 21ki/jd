@@ -46,8 +46,8 @@ let check_list = [
                  //第三个机场，以此类推。
 				{
 			      name: "几鸡Mary机场",
-				  email: "Mary",
-				  pwd: "Mary666666",
+				  email: "myki",
+				  pwd: "xiaofan@1",
 				  login_url: "https://b.luxury/signin",
 				  check_url: "https://b.luxury/user/checkin"
 				},
