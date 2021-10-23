@@ -25,11 +25,11 @@ let check_list = [
                 //配置机场信息
 				{
                   //机场名称用于辨识，可以任意，建议写对应机场名称
-			      name: "几鸡机场",
+			      name: "好家伙机场",
                   //用户名，适配email,username
-				  email: "Mary",
+				  email: "dev",
                   //密码，适配pwd,password,passwd
-				  pwd: "Mary666666",
+				  pwd: "dev",
                   //对应机场，登陆的链接
 				  login_url: "https://j05.space/signin",
                   //对应机场，签到的链接
@@ -37,9 +37,9 @@ let check_list = [
 				},
                 //第二个机场，以此类推。
 				{
-			      name: "二次元机场",
-				  email: "Mary@qq.com",
-				  pwd: "Mary666666",
+			      name: "ikuuu机场",
+				  email: "21kixc@gmail.com",
+				  pwd: "xiaofan@1",
 				  login_url: "https://ovo.ecyjc.com/auth/login",
 				  check_url: "https://ovo.ecyjc.com/user/checkin"
 				},
