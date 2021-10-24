@@ -1,6 +1,6 @@
 # [聚看点](https://www.kejiwanjia.com/jiaocheng/28426.html)
 安卓在抓包历史中搜openid，ios在www.xiaodouzhuan.cn链接上看请求头部的xz_jkd_appkey就可以（注意ios后面的!IOS!5.6.5是不需要的复制的）
-
+# 邀请码 24517377
 
 #青龙面板配置文件填写参数
 ```
