@@ -43,7 +43,7 @@ let check_list = [
 				  login_url: "https://ovo.ecyjc.com/auth/login",
 				  check_url: "https://ovo.ecyjc.com/user/checkin"
 				},
-                 //第三个机场，以此类推。
+                		 //第三个机场，以此类推。
 				{
 			          name: "几鸡",
 				  email: "myki",
@@ -51,6 +51,13 @@ let check_list = [
 				  login_url: "https://b.luxury/signin",
 				  check_url: "https://b.luxury/user/checkin"
 				},
+				{
+			          name: "橘子",
+				  email: "85959493@qq.com",
+				  pwd: "xiaofan@1",
+				  login_url: "https://juzi000.net/auth/login",
+				  check_url: "https://juzi000.net//user/checkin"
+				},	
 
 ];
 
