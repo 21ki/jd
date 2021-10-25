@@ -11,3 +11,5 @@ export jkdck='{"Cookie":"xz_jkd_appkey=参数1"}'
 export jkdhd='{"openid": "参数1"}'@'{"openid": "参数2"}'
 export jkdck='{"Cookie":"xz_jkd_appkey=参数1"}'@'{"Cookie":"xz_jkd_appkey=参数2"}'
 ```
+
+# [jc](https://github.com/jing5460/SSr-Sign)
