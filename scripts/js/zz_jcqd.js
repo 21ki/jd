@@ -27,13 +27,13 @@ let check_list = [
                   //机场名称用于辨识，可以任意，建议写对应机场名称
 			      name: "好家伙",
                   //用户名，适配email,username
-				  email: "dev",
+				  email: "85959493@qq.com",
                   //密码，适配pwd,password,passwd
-				  pwd: "dev",
+				  pwd: "xiaofan@1",
                   //对应机场，登陆的链接
-				  login_url: "https://j05.space/signin",
+				  login_url: "https://haojiahuo.live/auth/login",
                   //对应机场，签到的链接
-				  check_url: "https://j05.space/user/checkin"
+				  check_url: "https://haojiahuo.live/user/checkin"
 				},
                 //第二个机场，以此类推。
 				{
