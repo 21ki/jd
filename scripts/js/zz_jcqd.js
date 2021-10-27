@@ -51,7 +51,14 @@ let check_list = [
 				  login_url: "https://b.luxury/signin",
 				  check_url: "https://b.luxury/user/checkin"
 				},	
-
+                		 //刘超账号
+				{
+			          name: "几鸡",
+				  email: "Gavin",
+				  pwd: "liuchao123456",
+				  login_url: "https://b.luxury/signin",
+				  check_url: "https://b.luxury/user/checkin"
+				},
 ];
 
 
