@@ -23,27 +23,7 @@ corn 9 0,8 * * *
 //机场签到列表
 let check_list = [
                 //配置机场信息
-				{
-                  		//机场名称用于辨识，可以任意，建议写对应机场名称
-			      	  name: "好家伙",
-                  		//用户名，适配email,username
-				  email: "85959493@qq.com",
-                  		//密码，适配pwd,password,passwd
-				  pwd: "xiaofan@1",
-                  		//对应机场，登陆的链接
-				  login_url: "https://haojiahuo.live/auth/login",
-                  		//对应机场，签到的链接
-				  check_url: "https://haojiahuo.live/user/checkin"
-				},
-                		//第二个机场，以此类推。
-				{
-			      	  name: "ikuuu",
-				  email: "21kixc@gmail.com",
-				  pwd: "xiaofan@1",
-				  login_url: "https://ovo.ecyjc.com/auth/login",
-				  check_url: "https://ovo.ecyjc.com/user/checkin"
-				},
-                		 //第三个机场，以此类推。
+
 				{
 			          name: "几鸡",
 				  email: "fenshoney@gmail.com",
