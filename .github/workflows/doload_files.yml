@@ -33,10 +33,10 @@ jobs:
       run: |
         python3 download_jd_files.py
 
-      - name: Merge upstream
-        run: |
-          git config --global user.name '21ki'
-          git config --global user.email '21kixc@gmail.com'
-          git add .
-          git commit 'python_download'
-          git push origin main
+    - name: Merge upstream
+      run: |
+        git config --global user.name '21ki'
+        git config --global user.email '21kixc@gmail.com'
+        git add .
+        git commit 'python_download'
+        git push origin main
