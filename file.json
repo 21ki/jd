@@ -1,0 +1,34 @@
+{
+    "files":[
+        {
+            "url":"https://raw.githubusercontent.com/ccwav/QLScript2/main/ql.js",
+            "id":"ql.js",
+            "path": "./deps",
+            "tpye":"js"
+        },
+        {
+            "url":"https://raw.githubusercontent.com/ccwav/QLScript2/main/sendNotify.js",
+            "id":"sendNotify.js",
+            "path": "./deps",
+            "tpye":"js"
+        },
+        {
+            "url":"https://raw.githubusercontent.com/ccwav/QLScript2/main/JS_USER_AGENTS.js",
+            "id":"JS_USER_AGENTS.js",
+            "path": "./deps",
+            "tpye":"js"
+        },
+        {
+            "url":"https://raw.githubusercontent.com/ccwav/QLScript2/main/USER_AGENTS.js",
+            "id":"USER_AGENTS.js",
+            "path": "./deps",
+            "tpye":"js"
+        },
+        {
+            "url":"https://raw.githubusercontent.com/ccwav/QLScript2/main/jdCookie.js",
+            "id":"jdCookie.js",
+            "path": "./deps",
+            "tpye":"js"
+        }
+    ]
+}
