@@ -12,7 +12,7 @@ import os
 import json
 import requests
 
-data_file = "../json/file.json"
+data_file = "./file.json"
 
 
 def Download(url, path, id):

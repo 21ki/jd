@@ -25,17 +25,6 @@ jobs:
         # $CONDA is an environment variable pointing to the root of the miniconda directory
         echo "UPSTREAM_URL=${{ env.Myki }}" >> $GITHUB_ENV
         
-    - name: Install dependencies
-      run: |
-        pip install -r requirements.txt
-
-    - name: Install dependencies
-      run: |
-        python3 download_jd_files.py
-
-    - name: Install dependencies
-      run: |
-        python3 download_jd_files.py
 
     - name: Merge upstream
       run: |
