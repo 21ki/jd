@@ -12,7 +12,7 @@ import os
 import json
 import requests
 
-data_file = "./file.json"
+data_file = "../json/file.json"
 
 
 def Download(url, path, id):
@@ -26,7 +26,7 @@ def Download(url, path, id):
         else:
             print(url + 'is not FOUND')
     except:
-        print(url + 'failed')
+        print(url + ' \033[1;31m filed \033[0m!')
 
 
 def ParseData(data_file):
