@@ -29,10 +29,20 @@ jobs:
       run: |
         python3 download_jd_files.py
 
-    - name: Merge upstream
+#    - name: Merge upstream
+#      run: |
+#        git config --global user.name '21ki'
+#        git config --global user.email '21kixc@gmail.com'
+#        git add .
+#        git commit 'python_download'
+#        git push origin main
+    - name: Commit files
       run: |
-        git config --global user.name '21ki'
-        git config --global user.email '21kixc@gmail.com'
-        git add .
-        git commit 'python_download'
-        git push origin main
+        git config --local user.email "21kixc@gmail.com"
+        git config --local user.name "21ki"
+        git commit -m "Add changes" -a
+    - name: Push changes
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        branch: ${{ github.ref }}
