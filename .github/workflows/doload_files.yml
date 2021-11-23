@@ -20,29 +20,27 @@ jobs:
 #    - run: pip install -r requirements.txt
 #    - run: python3 download_jd_files.py
 
-    - name: Add conda to system path
-      run: |
-        # $CONDA is an environment variable pointing to the root of the miniconda directory
-        echo "UPSTREAM_URL=${{ env.Myki }}" >> $GITHUB_ENV
-        
     - name: python
       run: |
         python3 download_jd_files.py
 
-#    - name: Merge upstream
-#      run: |
-#        git config --global user.name '21ki'
-#        git config --global user.email '21kixc@gmail.com'
-#        git add .
-#        git commit 'python_download'
-#        git push origin main
+    - name: Add env to system path
+      run: |
+        # $CONDA is an environment variable pointing to the root of the miniconda directory
+        echo "UPSTREAM_URL=${{ env.Myki }}" >> $GITHUB_ENV
+        echo "GIT_CHANGE=$(git diff --quiet || echo 'dirty')" >> $GITHUB_ENV
+
     - name: Commit files
+      if: env.GIT_CHANGE = 'dirty'
       run: |
         git config --local user.email "21kixc@gmail.com"
         git config --local user.name "21ki"
         git commit -m "Add changes" -a
+
     - name: Push changes
+      if: env.GIT_CHANGE = 'dirty'
       uses: ad-m/github-push-action@master
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         branch: ${{ github.ref }}
+
