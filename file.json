@@ -29,6 +29,44 @@
             "id":"jdCookie.js",
             "path": "./deps",
             "tpye":"js"
-        }
+        },
+        {
+            "url":"https://raw.githubusercontent.com/whyour/qinglong/develop/sample/notify.py",
+            "id":"notify.py",
+            "path": "./qinglong",
+            "tpye":"py"
+        },
+        {
+            "url":"https://raw.githubusercontent.com/whyour/qinglong/develop/sample/notify.js",
+            "id":"notify.js",
+            "path": "./qinglong",
+            "tpye":"js"
+        },
+        {
+            "url":"https://raw.githubusercontent.com/Oreomeow/VIP/main/Scripts/sh/Helpcode2.8/code.sh",
+            "id":"code.sh",
+            "path": "./qinglong",
+            "tpye":"sh"
+        },
+        {
+            "url":"https://raw.githubusercontent.com/Oreomeow/VIP/main/Scripts/sh/Helpcode2.8/task_before.sh",
+            "id":"task_before.sh",
+            "path": "./qinglong",
+            "tpye":"sh"
+        },
+        {
+            "url":"https://raw.githubusercontent.com/Oreomeow/VIP/main/Scripts/sh/Helpcode2.8/config_sample.sh",
+            "id":"config_sample.sh",
+            "path": "./qinglong",
+            "tpye":"sh"
+        },
+        {
+            "url":"https://raw.githubusercontent.com/Oreomeow/VIP/main/Scripts/sh/Helpcode2.8/jdCookie.js",
+            "id":"jdCookie.js",
+            "path": "./qinglong",
+            "tpye":"js"
+        },		
     ]
 }
+
+
