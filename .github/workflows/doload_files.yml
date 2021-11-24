@@ -24,19 +24,19 @@ jobs:
       run: |
         python3 download_jd_files.py
 
-    - name: list
+    - name: list files
       run: |
-        ls -avh qinglong
-        tree qinglong
+        tree .
 
     - name: Add env to system path
+      id: IFFI
       run: |
         # $CONDA is an environment variable pointing to the root of the miniconda directory
         echo "UPSTREAM_URL=${{ env.Myki }}" >> $GITHUB_ENV
-        echo "GIT_CHANGE=$(git diff --quiet || echo 'dirty')" >> $GITHUB_ENV
+        run: echo "::set-output name=YN::$(git diff --quiet || echo 'dirty')"
 
     - name: Commit files
-      #if: env.GIT_CHANGE == 'dirty'
+      if: steps.date.outputs.date == 'dirty'
       run: |
         git config --local user.email "21kixc@gmail.com"
         git config --local user.name "21ki"
