@@ -114,7 +114,7 @@
   <link rel="assets" href="https://github.githubassets.com/">
   
 
-  <meta name="request-id" content="0401:2499:42F92C:8052B6:619E0DA8" data-pjax-transient="true"/><meta name="html-safe-nonce" content="e935d498fbc4130f94ed137e3f1387a9983328e79e62291d8c00905e4f11ff0c" data-pjax-transient="true"/><meta name="visitor-payload" content="eyJyZWZlcnJlciI6IiIsInJlcXVlc3RfaWQiOiIwNDAxOjI0OTk6NDJGOTJDOjgwNTJCNjo2MTlFMERBOCIsInZpc2l0b3JfaWQiOiIzMjUyMzE1MzgwMzg4ODU5MzA0IiwicmVnaW9uX2VkZ2UiOiJpYWQiLCJyZWdpb25fcmVuZGVyIjoiaWFkIn0=" data-pjax-transient="true"/><meta name="visitor-hmac" content="3044e7724778b41ec47a00555db58130a2a6b596f9c2830861df7e5a4d152553" data-pjax-transient="true"/>
+  <meta name="request-id" content="0401:887F:2C07EF:373183:619E0E7C" data-pjax-transient="true"/><meta name="html-safe-nonce" content="e053bad0e2caaba6787e1b887927108ec860449d4cd71f34d6841a1366bf9989" data-pjax-transient="true"/><meta name="visitor-payload" content="eyJyZWZlcnJlciI6IiIsInJlcXVlc3RfaWQiOiIwNDAxOjg4N0Y6MkMwN0VGOjM3MzE4Mzo2MTlFMEU3QyIsInZpc2l0b3JfaWQiOiI3MTY2MDg2MjM0MTcxNjQxNDY4IiwicmVnaW9uX2VkZ2UiOiJzZWEiLCJyZWdpb25fcmVuZGVyIjoic2VhIn0=" data-pjax-transient="true"/><meta name="visitor-hmac" content="6a59e30337e5c01203c96bbcdfbe28954ec599df8c29ff21bf4df5a80995a639" data-pjax-transient="true"/>
 
     <meta name="hovercard-subject-tag" content="repository:347404990" data-pjax-transient>
 
@@ -474,7 +474,7 @@
           spellcheck="false"
           autocomplete="off"
         >
-        <input type="hidden" data-csrf="true" class="js-data-jump-to-suggestions-path-csrf" value="+IGPXg7RgFOiDdISuj2S5PP3UCUkJswOeIX+EADujzAQHpIIxZblBqcrRBcJFG9aaqH0UyNi7CWY8DySs328LQ==" />
+        <input type="hidden" data-csrf="true" class="js-data-jump-to-suggestions-path-csrf" value="+wWO4RPAhDxr6Vg2ldqFRWeW+U0Yt4HVjLinpd3DjVr0RcCXCljw5SEa2K49NIRj2LIOyT/EV9Ap5nWUUgJkuw==" />
         <input type="hidden" class="js-site-search-type-field" name="type" >
             <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" aria-hidden="true" class="mr-1 header-search-key-slash"><path fill="none" stroke="#979A9C" opacity=".4" d="M3.5.5h12c1.7 0 3 1.3 3 3v13c0 1.7-1.3 3-3 3h-12c-1.7 0-3-1.3-3-3v-13c0-1.7 1.3-3 3-3z"></path><path fill="#979A9C" d="M11.8 6L8 15.1h-.9L10.8 6h1z"></path></svg>
 
@@ -1422,17 +1422,105 @@
 
 
     <div class="Box d-flex flex-column flex-shrink-0 mb-3">
-      <include-fragment src="/whyour/qinglong/contributors/develop/sample/notify.py" class="commit-loader">
-        <div class="Box-header d-flex flex-items-center">
-          <div class="Skeleton avatar avatar-user flex-shrink-0 ml-n1 mr-n1 mt-n1 mb-n1" style="width:24px;height:24px;"></div>
-          <div class="Skeleton Skeleton--text col-5 ml-2">&nbsp;</div>
-        </div>
+      
+  <div class="Box-header Details js-details-container">
+      <div class="d-flex flex-items-center">
+        <span class="flex-shrink-0 ml-n1 mr-n1 mt-n1 mb-n1">
+          <a rel="contributor" data-skip-pjax="true" data-hovercard-type="user" data-hovercard-url="/users/kilo5hz/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/kilo5hz"><img class="avatar avatar-user" src="https://avatars.githubusercontent.com/u/90814817?s=48&amp;v=4" width="24" height="24" alt="@kilo5hz" /></a>
+        </span>
+        <div class="flex-1 d-flex flex-items-center ml-3 min-width-0">
+          <div class="css-truncate css-truncate-overflow">
+            <a class="text-bold Link--primary" rel="contributor" data-hovercard-type="user" data-hovercard-url="/users/kilo5hz/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/kilo5hz">kilo5hz</a>
 
-        <div class="Box-body d-flex flex-items-center" >
-          <div class="Skeleton Skeleton--text col-1">&nbsp;</div>
-          <span class="color-fg-danger h6 loader-error">Cannot retrieve contributors at this time</span>
+              <span class="markdown-title">
+                <a data-pjax="true" title="增加gotify推送 (#905)
+
+* 增加gotify推送" class="Link--secondary" href="/whyour/qinglong/commit/0cde9d07eebc39e98d8d58d1cf0e0fb74a0f55a0">增加gotify推送 (</a><a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1052862853" data-permission-text="Title is private" data-url="https://github.com/whyour/qinglong/issues/905" data-hovercard-type="pull_request" data-hovercard-url="/whyour/qinglong/pull/905/hovercard" href="https://github.com/whyour/qinglong/pull/905">#905</a><a data-pjax="true" title="增加gotify推送 (#905)
+
+* 增加gotify推送" class="Link--secondary" href="/whyour/qinglong/commit/0cde9d07eebc39e98d8d58d1cf0e0fb74a0f55a0">)</a>
+              </span>
+          </div>
+
+            <span class="hidden-text-expander ml-1 flex-shrink-0">
+              <button type="button" class="ellipsis-expander js-details-target" aria-expanded="false">&hellip;</button>
+            </span>
+
+          <span class="ml-2">
+            <include-fragment accept="text/fragment+html" src="/whyour/qinglong/commit/0cde9d07eebc39e98d8d58d1cf0e0fb74a0f55a0/rollup?direction=e" class="d-inline"></include-fragment>
+          </span>
         </div>
-</include-fragment>    </div>
+        <div class="ml-3 d-flex flex-shrink-0 flex-items-center flex-justify-end color-fg-muted no-wrap">
+          <span class="d-none d-md-inline">
+            <span>Latest commit</span>
+            <a class="text-small text-mono Link--secondary" href="/whyour/qinglong/commit/0cde9d07eebc39e98d8d58d1cf0e0fb74a0f55a0" data-pjax>0cde9d0</a>
+            <span itemprop="dateModified"><relative-time datetime="2021-11-15T15:04:55Z" class="no-wrap">Nov 15, 2021</relative-time></span>
+          </span>
+
+          <a data-pjax href="/whyour/qinglong/commits/develop/sample/notify.py" class="ml-3 no-wrap Link--primary no-underline">
+            <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-history">
+    <path fill-rule="evenodd" d="M1.643 3.143L.427 1.927A.25.25 0 000 2.104V5.75c0 .138.112.25.25.25h3.646a.25.25 0 00.177-.427L2.715 4.215a6.5 6.5 0 11-1.18 4.458.75.75 0 10-1.493.154 8.001 8.001 0 101.6-5.684zM7.75 4a.75.75 0 01.75.75v2.992l2.028.812a.75.75 0 01-.557 1.392l-2.5-1A.75.75 0 017 8.25v-3.5A.75.75 0 017.75 4z"></path>
+</svg>
+            <span class="d-none d-sm-inline">
+              <strong>History</strong>
+            </span>
+          </a>
+        </div>
+      </div>
+        <div class="Details-content--hidden ml-5 mt-2"><pre class="mt-2 f6 ws-pre-wrap">* 增加gotify推送</pre></div>
+
+  </div>
+
+  <div class="Box-body d-flex flex-items-center flex-auto border-bottom-0 flex-wrap" >
+    <details class="details-reset details-overlay details-overlay-dark lh-default color-fg-default float-left mr-3" id="blob_contributors_box">
+      <summary class="Link--primary">
+        <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-people">
+    <path fill-rule="evenodd" d="M5.5 3.5a2 2 0 100 4 2 2 0 000-4zM2 5.5a3.5 3.5 0 115.898 2.549 5.507 5.507 0 013.034 4.084.75.75 0 11-1.482.235 4.001 4.001 0 00-7.9 0 .75.75 0 01-1.482-.236A5.507 5.507 0 013.102 8.05 3.49 3.49 0 012 5.5zM11 4a.75.75 0 100 1.5 1.5 1.5 0 01.666 2.844.75.75 0 00-.416.672v.352a.75.75 0 00.574.73c1.2.289 2.162 1.2 2.522 2.372a.75.75 0 101.434-.44 5.01 5.01 0 00-2.56-3.012A3 3 0 0011 4z"></path>
+</svg>
+        <strong>5</strong>
+        
+        contributors
+      </summary>
+      <details-dialog
+        class="Box Box--overlay d-flex flex-column anim-fade-in fast"
+        aria-label="Users who have contributed to this file"
+        src="/whyour/qinglong/contributors-list/develop/sample/notify.py" preload>
+        <div class="Box-header">
+          <button class="Box-btn-octicon btn-octicon float-right" type="button" aria-label="Close dialog" data-close-dialog>
+            <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-x">
+    <path fill-rule="evenodd" d="M3.72 3.72a.75.75 0 011.06 0L8 6.94l3.22-3.22a.75.75 0 111.06 1.06L9.06 8l3.22 3.22a.75.75 0 11-1.06 1.06L8 9.06l-3.22 3.22a.75.75 0 01-1.06-1.06L6.94 8 3.72 4.78a.75.75 0 010-1.06z"></path>
+</svg>
+          </button>
+          <h3 class="Box-title">
+            Users who have contributed to this file
+          </h3>
+        </div>
+        <include-fragment>
+          <span role="status">
+  <span class="sr-only">Loading</span>
+  <svg style="box-sizing: content-box; color: var(--color-icon-primary);" width="32" height="32" viewBox="0 0 16 16" fill="none" data-view-component="true" class="my-3 mx-auto d-block anim-rotate">
+    <circle cx="8" cy="8" r="7" stroke="currentColor" stroke-opacity="0.25" stroke-width="2" vector-effect="non-scaling-stroke" />
+    <path d="M15 8a7.002 7.002 0 00-7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" vector-effect="non-scaling-stroke" />
+</svg></span>
+
+        </include-fragment>
+      </details-dialog>
+    </details>
+      <span class="">
+    <a class="avatar-link" data-hovercard-type="user" data-hovercard-url="/users/Oreomeow/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/whyour/qinglong/commits/develop/sample/notify.py?author=Oreomeow">
+      <img class="avatar mr-2 avatar-user" src="https://avatars.githubusercontent.com/u/62660101?s=48&amp;v=4" width="24" height="24" alt="@Oreomeow" /> 
+</a>    <a class="avatar-link" data-hovercard-type="user" data-hovercard-url="/users/Zy143L/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/whyour/qinglong/commits/develop/sample/notify.py?author=Zy143L">
+      <img class="avatar mr-2 avatar-user" src="https://avatars.githubusercontent.com/u/21352718?s=48&amp;v=4" width="24" height="24" alt="@Zy143L" /> 
+</a>    <a class="avatar-link" data-hovercard-type="user" data-hovercard-url="/users/whyour/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/whyour/qinglong/commits/develop/sample/notify.py?author=whyour">
+      <img class="avatar mr-2 avatar-user" src="https://avatars.githubusercontent.com/u/22700758?s=48&amp;v=4" width="24" height="24" alt="@whyour" /> 
+</a>    <a class="avatar-link" data-hovercard-type="user" data-hovercard-url="/users/Sowevo/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/whyour/qinglong/commits/develop/sample/notify.py?author=Sowevo">
+      <img class="avatar mr-2 avatar-user" src="https://avatars.githubusercontent.com/u/31763582?s=48&amp;v=4" width="24" height="24" alt="@Sowevo" /> 
+</a>    <a class="avatar-link" data-hovercard-type="user" data-hovercard-url="/users/kilo5hz/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/whyour/qinglong/commits/develop/sample/notify.py?author=kilo5hz">
+      <img class="avatar mr-2 avatar-user" src="https://avatars.githubusercontent.com/u/90814817?s=48&amp;v=4" width="24" height="24" alt="@kilo5hz" /> 
+</a>
+</span>
+
+  </div>
+    </div>
 
 
 
