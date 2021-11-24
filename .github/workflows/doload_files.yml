@@ -36,7 +36,7 @@ jobs:
         echo "GIT_CHANGE=$(git diff --quiet || echo 'dirty')" >> $GITHUB_ENV
 
     - name: Commit files
-      if: env.GIT_CHANGE == 'dirty'
+      #if: env.GIT_CHANGE == 'dirty'
       run: |
         git config --local user.email "21kixc@gmail.com"
         git config --local user.name "21ki"
@@ -44,7 +44,7 @@ jobs:
         git commit -m "sync-bot"
 
     - name: Push changes
-      if: env.GIT_CHANGE == 'dirty'
+      #if: env.GIT_CHANGE == 'dirty'
       uses: ad-m/github-push-action@master
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
