@@ -31,13 +31,13 @@
       "tpye": "js"
     },
     {
-      "url": "https://raw.githubusercontent.com/whyour/qinglong/develop/sample/notify.py",
+      "url": "https://github.com/whyour/qinglong/blob/develop/sample/notify.py",
       "id": "notify.py",
       "path": "./qinglong",
       "tpye": "py"
     },
     {
-      "url": "https://raw.githubusercontent.com/whyour/qinglong/develop/sample/notify.js",
+      "url": "https://github.com/whyour/qinglong/blob/develop/sample/notify.js",
       "id": "notify.js",
       "path": "./qinglong",
       "tpye": "js"
