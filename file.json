@@ -31,18 +31,6 @@
       "tpye": "js"
     },
     {
-      "url": "https://raw.githubusercontent.com/whyour/qinglong/develop/sample/notify.py",
-      "id": "notify.py",
-      "path": "./qinglong",
-      "tpye": "py"
-    },
-    {
-      "url": "https://raw.githubusercontent.com/whyour/qinglong/develop/sample/notify.js",
-      "id": "notify.js",
-      "path": "./qinglong",
-      "tpye": "js"
-    },
-    {
       "url": "https://raw.githubusercontent.com/Oreomeow/VIP/main/Scripts/sh/Helpcode2.8/code.sh",
       "id": "code.sh",
       "path": "./qinglong",
