@@ -3,70 +3,68 @@
         {
             "url":"https://raw.githubusercontent.com/ccwav/QLScript2/main/ql.js",
             "id":"ql.js",
-            "path": "./deps",
+            "path":"./deps",
             "tpye":"js"
         },
         {
             "url":"https://raw.githubusercontent.com/ccwav/QLScript2/main/sendNotify.js",
             "id":"sendNotify.js",
-            "path": "./deps",
+            "path":"./deps",
             "tpye":"js"
         },
         {
             "url":"https://raw.githubusercontent.com/ccwav/QLScript2/main/JS_USER_AGENTS.js",
             "id":"JS_USER_AGENTS.js",
-            "path": "./deps",
+            "path":"./deps",
             "tpye":"js"
         },
         {
             "url":"https://raw.githubusercontent.com/ccwav/QLScript2/main/USER_AGENTS.js",
             "id":"USER_AGENTS.js",
-            "path": "./deps",
+            "path":"./deps",
             "tpye":"js"
         },
         {
             "url":"https://raw.githubusercontent.com/ccwav/QLScript2/main/jdCookie.js",
             "id":"jdCookie.js",
-            "path": "./deps",
+            "path":"./deps",
             "tpye":"js"
         },
         {
             "url":"https://raw.githubusercontent.com/whyour/qinglong/develop/sample/notify.py",
             "id":"notify.py",
-            "path": "./qinglong",
+            "path":"./qinglong",
             "tpye":"py"
         },
         {
             "url":"https://raw.githubusercontent.com/whyour/qinglong/develop/sample/notify.js",
             "id":"notify.js",
-            "path": "./qinglong",
+            "path":"./qinglong",
             "tpye":"js"
         },
         {
             "url":"https://raw.githubusercontent.com/Oreomeow/VIP/main/Scripts/sh/Helpcode2.8/code.sh",
             "id":"code.sh",
-            "path": "./qinglong",
+            "path":"./qinglong",
             "tpye":"sh"
         },
         {
             "url":"https://raw.githubusercontent.com/Oreomeow/VIP/main/Scripts/sh/Helpcode2.8/task_before.sh",
             "id":"task_before.sh",
-            "path": "./qinglong",
+            "path":"./qinglong",
             "tpye":"sh"
         },
         {
             "url":"https://raw.githubusercontent.com/Oreomeow/VIP/main/Scripts/sh/Helpcode2.8/config_sample.sh",
             "id":"config_sample.sh",
-            "path": "./qinglong",
+            "path":"./qinglong",
             "tpye":"sh"
         },
         {
             "url":"https://raw.githubusercontent.com/Oreomeow/VIP/main/Scripts/sh/Helpcode2.8/jdCookie.js",
             "id":"jdCookie.js",
-            "path": "./qinglong",
+            "path":"./qinglong",
             "tpye":"js"
         }
     ]
 }
-
-
