@@ -26,7 +26,8 @@ jobs:
 
     - name: list
       run: |
-        ll -avh qinglong
+        l2 -avh qinglong
+        tree qinglong
 
     - name: Add env to system path
       run: |
