@@ -24,6 +24,10 @@ jobs:
       run: |
         python3 download_jd_files.py
 
+    - name: list
+      run: |
+        ll -avh qinglong
+
     - name: Add env to system path
       run: |
         # $CONDA is an environment variable pointing to the root of the miniconda directory
