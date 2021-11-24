@@ -1,8 +1,6 @@
 #!/usr/bin/env bash
 
-# 基于 https://t.me/update_help/42?single
-
-# Build 20211009-001-test
+# Build 20211122-001
 
 name_js=(
   jd_fruit
@@ -165,6 +163,7 @@ team_task(){
         for ((i=0; i<${#teamer_array[*]}; i++)); do
             combine_team ${teamer_array[i]} ${team_array[i]} ${activityId[i]} ${activityUrl[i]}
             [[ $q -ge $(($user_sum/p)) ]] && q=$(($user_sum/p))
+            [[ q -lt 1 ]] && q=1
             for ((m = 0; m < $user_sum; m++)); do
                 j=$((m + 1))
                 x=$((m/q))
@@ -255,12 +254,8 @@ combine_only() {
                     . $dir_log/.ShareCode/${name_config[i]}.log
                     result=$(combine_sub ${var_name[i]})
                     if [[ $result ]]; then
-                        # 魔改说明：直接设置在ck超过45时，会导致env过大，部分系统命令无法执行，导致脚本执行失败
-                        #   这里改成设置一个标记，在nodejs中去实际设置环境变量
-                        # export ${env_name[i]}=$result
                         export ShareCodeConfigName=${name_config[i]}
                         export ShareCodeEnvName=${env_name[i]}
-                        echo "设置环境变量标记 ShareCodeConfigName=${ShareCodeConfigName} ShareCodeEnvName=${ShareCodeEnvName}, 供nodejs去实际生成互助码环境变量"
                     fi
                 fi
                 ;;
