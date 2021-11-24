@@ -30,13 +30,13 @@ jobs:
 
     - name: Add env to system path
       id: IFFI
-      run: |
+      #run: |
         # $CONDA is an environment variable pointing to the root of the miniconda directory
-        echo "UPSTREAM_URL=${{ env.Myki }}" >> $GITHUB_ENV
-        run: echo "::set-output name=YN::$(git diff --quiet || echo 'dirty')"
+       # echo "UPSTREAM_URL=${{ env.Myki }}" >> $GITHUB_ENV
+      run: echo "::set-output name=YN::$(git diff --quiet || echo 'dirty')"
 
     - name: Commit files
-      if: steps.date.outputs.date == 'dirty'
+      if: steps.IFFI.outputs.YN == 'dirty'
       run: |
         git config --local user.email "21kixc@gmail.com"
         git config --local user.name "21ki"
