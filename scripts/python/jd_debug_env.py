@@ -13,4 +13,5 @@ import os
 #第二种获取所有变量
 for k, v in os.environ.items():
     print("%s=%s" % (k, v))
-os.system('date')
+SYSTEM_TIME= os.system('date')
+print('This is a \033[1;31m ' + SYSTEM_TIME + '\033[0m!')
