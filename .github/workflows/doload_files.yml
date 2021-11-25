@@ -28,13 +28,6 @@ jobs:
       run: |
         tree .
 
-    - name: Add env to system path
-      id: IFFI
-      #run: |
-        # $CONDA is an environment variable pointing to the root of the miniconda directory
-       # echo "UPSTREAM_URL=${{ env.Myki }}" >> $GITHUB_ENV
-      run: echo "::set-output name=YN::$(git diff --quiet || echo 'dirty')"
-
     - name: Commit files
       #if: steps.IFFI.outputs.YN == 'dirty'
       run: |
@@ -42,6 +35,13 @@ jobs:
         git config --local user.name "21ki"
         git add .
         git commit -m "sync-bot"
+
+    - name: Add env to system path
+      id: IFFI
+      #run: |
+        # $CONDA is an environment variable pointing to the root of the miniconda directory
+       # echo "UPSTREAM_URL=${{ env.Myki }}" >> $GITHUB_ENV
+      run: echo "::set-output name=YN::$(git diff --quiet || echo 'dirty')"
 
     - name: Push changes
       #if: steps.IFFI.outputs.YN == 'dirty'
