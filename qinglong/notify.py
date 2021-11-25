@@ -19,18 +19,18 @@
 
   <link crossorigin="anonymous" media="all" integrity="sha512-1G4rYJktwRTQKn7fVfJUxH8RRZFUJlGo77xMZfBfIhZPx4BHVrzPE1VgnafttXI8G3y/PywH3uXyhNkSLp3+oA==" rel="stylesheet" href="https://github.githubassets.com/assets/light-d46e2b60992dc114d02a7edf55f254c4.css" /><link crossorigin="anonymous" media="all" integrity="sha512-hI5b2oqTE9njfjYrfuzXqA4bSGSNrE5OMc9IiFhZy+RDGg9Qn4Si1A97o0MlinlwFt3xAifvoLX0s7jHmHSvVw==" rel="stylesheet" href="https://github.githubassets.com/assets/dark-848e5bda8a9313d9e37e362b7eecd7a8.css" /><link data-color-theme="dark_dimmed" crossorigin="anonymous" media="all" integrity="sha512-klQdb3t14AYaRMkB0v9buaf5Ftfbec/sbxdkvyQpG6oBvzZxxH6N5QwA4llOyZsoyjqiZaTra2ci5TgInnLqQg==" rel="stylesheet" data-href="https://github.githubassets.com/assets/dark_dimmed-92541d6f7b75e0061a44c901d2ff5bb9.css" /><link data-color-theme="dark_high_contrast" crossorigin="anonymous" media="all" integrity="sha512-CBsfpBvg1D/Hvn8FFY4JwUVgoKjgynOSFKwgThDHrHASVid/Isgz0ueab5xSuSVx8vEvNL9UfYcpWIJRJYTCjg==" rel="stylesheet" data-href="https://github.githubassets.com/assets/dark_high_contrast-081b1fa41be0d43fc7be7f05158e09c1.css" /><link data-color-theme="dark_colorblind" crossorigin="anonymous" media="all" integrity="sha512-09ipkynAtzCqasl2D2//N51bUOVnOzBFdadcXdMWyphI81s1FWmJ9AD1NRq3e0PMfiJEiVSm9mjTYd7gv2xtWA==" rel="stylesheet" data-href="https://github.githubassets.com/assets/dark_colorblind-d3d8a99329c0b730aa6ac9760f6fff37.css" /><link data-color-theme="light_colorblind" crossorigin="anonymous" media="all" integrity="sha512-OJwnC/pGdOV3QMoWud8vp0nxtQhtzAcpNWB7mSSh/e7fPslExSb07EOdNTAJsBAS4bN7Yrdxm2F7htANgTIMsA==" rel="stylesheet" data-href="https://github.githubassets.com/assets/light_colorblind-389c270bfa4674e57740ca16b9df2fa7.css" /><link data-color-theme="light_high_contrast" crossorigin="anonymous" media="all" integrity="sha512-5swg0RJGlhj0UH3SLkJ6e/BYm/DmpyGTaUSCUBhf1HtC4lBV+zM9mxOQ8febH318pxcUzUpp09qi0z7EKfWuDQ==" rel="stylesheet" data-href="https://github.githubassets.com/assets/light_high_contrast-e6cc20d112469618f4507dd22e427a7b.css" />
   <link crossorigin="anonymous" media="all" integrity="sha512-T3N453hWCYsL8yKfu3yye2yyO/D51Lq2iT5svAdl7UKvV2rBPcV7iOgr3fihzB9vYV7YFIK3PxpyTTkfxAshog==" rel="stylesheet" href="https://github.githubassets.com/assets/frameworks-4f7378e77856098b0bf3229fbb7cb27b.css" />
-    <link crossorigin="anonymous" media="all" integrity="sha512-pAu2IAk7fo0CCC7BXQoZqOpakNWbQ24PcGFe/tnPfhmlsNmlZSBj1+sTX18P/9ql6rVEf8hyXQ5rDOVzaOE9IA==" rel="stylesheet" href="https://github.githubassets.com/assets/behaviors-a40bb620093b7e8d02082ec15d0a19a8.css" />
-    <link crossorigin="anonymous" media="all" integrity="sha512-MCJFYfbQoT4EXC6aWx5Wghs8FC/jslHEeN2iWXphliccmede2dQlhIBTAUCBq9Yu5poltu4askungzvyCsycGg==" rel="stylesheet" href="https://github.githubassets.com/assets/tab-size-fix-30224561f6d0a13e045c2e9a5b1e5682.css" />
-    
-    
-    
-    <link crossorigin="anonymous" media="all" integrity="sha512-VmSSZ1upkEtocudA/V2kV4lxbVeN4JSv1bqW85kL1t8IpXzgsDU0837IGp2lM24g6OUT7cTDQ1hTj1ApBUJ4mg==" rel="stylesheet" href="https://github.githubassets.com/assets/github-566492675ba9904b6872e740fd5da457.css" />
+  <link crossorigin="anonymous" media="all" integrity="sha512-pAu2IAk7fo0CCC7BXQoZqOpakNWbQ24PcGFe/tnPfhmlsNmlZSBj1+sTX18P/9ql6rVEf8hyXQ5rDOVzaOE9IA==" rel="stylesheet" href="https://github.githubassets.com/assets/behaviors-a40bb620093b7e8d02082ec15d0a19a8.css" />
+  <link crossorigin="anonymous" media="all" integrity="sha512-MCJFYfbQoT4EXC6aWx5Wghs8FC/jslHEeN2iWXphliccmede2dQlhIBTAUCBq9Yu5poltu4askungzvyCsycGg==" rel="stylesheet" href="https://github.githubassets.com/assets/tab-size-fix-30224561f6d0a13e045c2e9a5b1e5682.css" />
+  
+  
+  
+  <link crossorigin="anonymous" media="all" integrity="sha512-VmSSZ1upkEtocudA/V2kV4lxbVeN4JSv1bqW85kL1t8IpXzgsDU0837IGp2lM24g6OUT7cTDQ1hTj1ApBUJ4mg==" rel="stylesheet" href="https://github.githubassets.com/assets/github-566492675ba9904b6872e740fd5da457.css" />
 
   <script crossorigin="anonymous" defer="defer" integrity="sha512-K/kjAAGVhlckApEbskyYOB+ASq3m0GKyJk3y0JoEafwknEbUpmilodEuQQJG09c0v1eCRlX7mSQp+GLGtXmWQg==" type="application/javascript" src="https://github.githubassets.com/assets/environment-2bf92300.js"></script>
     <script crossorigin="anonymous" defer="defer" integrity="sha512-oBDjsGOOnyhlA5UdJdsqQzoij+eSWL6RSaWwVH1rDeFBEF4uXgY2qvYkGz7GGEXL43PMXoO+HJk3pOOTnW7Snw==" type="application/javascript" src="https://github.githubassets.com/assets/chunk-frameworks-a010e3b0.js"></script>
-    <script crossorigin="anonymous" defer="defer" integrity="sha512-0V9Fd8M3m9Oyyf9rHecTlZSRgbXXBHpY/Ah7zt+gaahbB9q3KX4TghmHg+2Gxlxabiu7HsrhyHEWFMJ88Oukpw==" type="application/javascript" src="https://github.githubassets.com/assets/chunk-vendor-d15f4577.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-pEuiC5g/bPxJ6DWhOK4vgGNJ82p1B9O9OrUM4c8qCrzkZqAsDILOk8S3wr7ToHsGAa0UOyM7Y4dscERce7tARQ==" type="application/javascript" src="https://github.githubassets.com/assets/chunk-vendor-a44ba20b.js"></script>
   
-  <script crossorigin="anonymous" defer="defer" integrity="sha512-ktOcjy/yAmHvLU21MZo7rNekFcJVmwQaVlqAoxfbYoTti2j9gHkd8iwGpjDTjFMn/AulzuA1vf8zFkq+VCDQMg==" type="application/javascript" src="https://github.githubassets.com/assets/behaviors-92d39c8f.js"></script>
+  <script crossorigin="anonymous" defer="defer" integrity="sha512-k0TI6X55JNdfWcUCjaUF6UB/Y/UrHsNCX215ny8X5o8DdcT8EXYpEwYLmLrkchvGJu6w3/TKcVI0YgcddlOtyg==" type="application/javascript" src="https://github.githubassets.com/assets/behaviors-9344c8e9.js"></script>
   
     <script crossorigin="anonymous" defer="defer" integrity="sha512-ODZJzCJpaOfusrIka5QVZQcPiO9LBGyrrMYjhhJWSLuCN5WbZ5xiEiiOPOKVu71dqygyRdB2TY7AKPA1J5hqdg==" type="application/javascript" data-module-id="./chunk-unveil.js" data-src="https://github.githubassets.com/assets/chunk-unveil-383649cc.js"></script>
     <script crossorigin="anonymous" defer="defer" integrity="sha512-emPgUbSwW9ezLCgRnTE7n4fbbfc/MqEEDHmnkmG61dTyjWKHTYKN4wN3OPS7SY0fwmSJ8mB5+gng2nZw4/HsUg==" type="application/javascript" data-module-id="./chunk-animate-on-scroll.js" data-src="https://github.githubassets.com/assets/chunk-animate-on-scroll-7a63e051.js"></script>
@@ -103,8 +103,8 @@
   <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
   <meta property="fb:app_id" content="1401488693436528">
   <meta name="apple-itunes-app" content="app-id=1477376905" />
-    <meta name="twitter:image:src" content="https://opengraph.githubassets.com/a72abda197a3f977bce11de20f89b60fc06665019f69a14a76c1fdb6ebbeb07a/whyour/qinglong" /><meta name="twitter:site" content="@github" /><meta name="twitter:card" content="summary_large_image" /><meta name="twitter:title" content="qinglong/notify.py at develop · whyour/qinglong" /><meta name="twitter:description" content="支持python3、javaScript、shell、typescript 的定时任务管理面板（A timed task management panel that supports typescript, javaScript, python3, and shell） - qinglong/notify.py at develop · whyour/qinglong" />
-    <meta property="og:image" content="https://opengraph.githubassets.com/a72abda197a3f977bce11de20f89b60fc06665019f69a14a76c1fdb6ebbeb07a/whyour/qinglong" /><meta property="og:image:alt" content="支持python3、javaScript、shell、typescript 的定时任务管理面板（A timed task management panel that supports typescript, javaScript, python3, and shell） - qinglong/notify.py at develop · whyour/qinglong" /><meta property="og:image:width" content="1200" /><meta property="og:image:height" content="600" /><meta property="og:site_name" content="GitHub" /><meta property="og:type" content="object" /><meta property="og:title" content="qinglong/notify.py at develop · whyour/qinglong" /><meta property="og:url" content="https://github.com/whyour/qinglong" /><meta property="og:description" content="支持python3、javaScript、shell、typescript 的定时任务管理面板（A timed task management panel that supports typescript, javaScript, python3, and shell） - qinglong/notify.py at develop · whyour/qinglong" />
+    <meta name="twitter:image:src" content="https://opengraph.githubassets.com/28b4eddd99f3dcd56ce1952c1d189b6729979f3fa5a8a5cbee3500d3c1651852/whyour/qinglong" /><meta name="twitter:site" content="@github" /><meta name="twitter:card" content="summary_large_image" /><meta name="twitter:title" content="qinglong/notify.py at develop · whyour/qinglong" /><meta name="twitter:description" content="支持python3、javaScript、shell、typescript 的定时任务管理面板（A timed task management panel that supports typescript, javaScript, python3, and shell） - qinglong/notify.py at develop · whyour/qinglong" />
+    <meta property="og:image" content="https://opengraph.githubassets.com/28b4eddd99f3dcd56ce1952c1d189b6729979f3fa5a8a5cbee3500d3c1651852/whyour/qinglong" /><meta property="og:image:alt" content="支持python3、javaScript、shell、typescript 的定时任务管理面板（A timed task management panel that supports typescript, javaScript, python3, and shell） - qinglong/notify.py at develop · whyour/qinglong" /><meta property="og:image:width" content="1200" /><meta property="og:image:height" content="600" /><meta property="og:site_name" content="GitHub" /><meta property="og:type" content="object" /><meta property="og:title" content="qinglong/notify.py at develop · whyour/qinglong" /><meta property="og:url" content="https://github.com/whyour/qinglong" /><meta property="og:description" content="支持python3、javaScript、shell、typescript 的定时任务管理面板（A timed task management panel that supports typescript, javaScript, python3, and shell） - qinglong/notify.py at develop · whyour/qinglong" />
     
 
 
@@ -114,7 +114,7 @@
   <link rel="assets" href="https://github.githubassets.com/">
   
 
-  <meta name="request-id" content="0401:887F:2C07EF:373183:619E0E7C" data-pjax-transient="true"/><meta name="html-safe-nonce" content="e053bad0e2caaba6787e1b887927108ec860449d4cd71f34d6841a1366bf9989" data-pjax-transient="true"/><meta name="visitor-payload" content="eyJyZWZlcnJlciI6IiIsInJlcXVlc3RfaWQiOiIwNDAxOjg4N0Y6MkMwN0VGOjM3MzE4Mzo2MTlFMEU3QyIsInZpc2l0b3JfaWQiOiI3MTY2MDg2MjM0MTcxNjQxNDY4IiwicmVnaW9uX2VkZ2UiOiJzZWEiLCJyZWdpb25fcmVuZGVyIjoic2VhIn0=" data-pjax-transient="true"/><meta name="visitor-hmac" content="6a59e30337e5c01203c96bbcdfbe28954ec599df8c29ff21bf4df5a80995a639" data-pjax-transient="true"/>
+  <meta name="request-id" content="07C1:5E19:8F2473:112A0CC:619EEC1E" data-pjax-transient="true"/><meta name="html-safe-nonce" content="8bcceb813198b353f68450ff17100bb92b5cf14a6185dc3b2d6d014358f2a1e1" data-pjax-transient="true"/><meta name="visitor-payload" content="eyJyZWZlcnJlciI6IiIsInJlcXVlc3RfaWQiOiIwN0MxOjVFMTk6OEYyNDczOjExMkEwQ0M6NjE5RUVDMUUiLCJ2aXNpdG9yX2lkIjoiNDc5MzM1ODEwMjk4NDMyMjA3OCIsInJlZ2lvbl9lZGdlIjoiaWFkIiwicmVnaW9uX3JlbmRlciI6ImlhZCJ9" data-pjax-transient="true"/><meta name="visitor-hmac" content="ab4cb3641aa251655c866c1f3c4a26b7c6b373dac9c0516bd7d913dd5959ec76" data-pjax-transient="true"/>
 
     <meta name="hovercard-subject-tag" content="repository:347404990" data-pjax-transient>
 
@@ -156,10 +156,10 @@
 
     <meta name="enabled-features" content="MARKETPLACE_PENDING_INSTALLATIONS,FILE_UPLOAD_CURSOR_POSITION">
 
-  <meta http-equiv="x-pjax-version" content="ced6cdd40099d643162397be6ddeaba8e0a6dfc0c78695d9ba5f1e4bdf4c1128">
+  <meta http-equiv="x-pjax-version" content="a832b37c08b3e78df6ec377806e43758194cd5c22356ceca2e902cd1861684e1">
   <meta http-equiv="x-pjax-csp-version" content="9ea82e8060ac9d44365bfa193918b70ed58abd9413362ba412abb161b3a8d1b6">
   <meta http-equiv="x-pjax-css-version" content="49d339c8792c24d5fa8103c5556759f04f67e75a6c7f8d104a2eea524df8c90b">
-  <meta http-equiv="x-pjax-js-version" content="59fc84afd383f86f05cde6c0b40f03d4a1eb7bdedf9071387a7c9e54dc11667f">
+  <meta http-equiv="x-pjax-js-version" content="37239e3770094982a4ee5ef5289318f96dda432abbca25accfa9812ac257002f">
   
 
     
@@ -474,7 +474,7 @@
           spellcheck="false"
           autocomplete="off"
         >
-        <input type="hidden" data-csrf="true" class="js-data-jump-to-suggestions-path-csrf" value="+wWO4RPAhDxr6Vg2ldqFRWeW+U0Yt4HVjLinpd3DjVr0RcCXCljw5SEa2K49NIRj2LIOyT/EV9Ap5nWUUgJkuw==" />
+        <input type="hidden" data-csrf="true" class="js-data-jump-to-suggestions-path-csrf" value="53rwEpZEr/AhjI0OOsHGRv1/nDRYrBuXBtGRFK/GpduWDs0vy+O3O7Df4Nyp54NAh7njLQceuRLQkWUG3fob1Q==" />
         <input type="hidden" class="js-site-search-type-field" name="type" >
             <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" aria-hidden="true" class="mr-1 header-search-key-slash"><path fill="none" stroke="#979A9C" opacity=".4" d="M3.5.5h12c1.7 0 3 1.3 3 3v13c0 1.7-1.3 3-3 3h-12c-1.7 0-3-1.3-3-3v-13c0-1.7 1.3-3 3-3z"></path><path fill="#979A9C" d="M11.8 6L8 15.1h-.9L10.8 6h1z"></path></svg>
 
@@ -781,7 +781,7 @@
 </a>      <a
         class="social-count js-social-count"
         href="/whyour/qinglong/stargazers"
-        aria-label="3971 users starred this repository"
+        aria-label="3980 users starred this repository"
         data-singular-suffix="user starred this repository"
         data-plural-suffix="users starred this repository"
       >
@@ -805,7 +805,7 @@
   <a
     href="/whyour/qinglong/network/members"
     class="social-count"
-    aria-label="1302 users forked this repository"
+    aria-label="1306 users forked this repository"
   >
     1.3k
   </a>
@@ -848,7 +848,7 @@
     <path d="M8 9.5a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"></path><path fill-rule="evenodd" d="M8 0a8 8 0 100 16A8 8 0 008 0zM1.5 8a6.5 6.5 0 1113 0 6.5 6.5 0 01-13 0z"></path>
 </svg>
           <span data-content="Issues">Issues</span>
-            <span id="issues-repo-tab-count" data-pjax-replace="" title="117" data-view-component="true" class="Counter">117</span>
+            <span id="issues-repo-tab-count" data-pjax-replace="" title="119" data-view-component="true" class="Counter">119</span>
 
 
     
@@ -1422,105 +1422,17 @@
 
 
     <div class="Box d-flex flex-column flex-shrink-0 mb-3">
-      
-  <div class="Box-header Details js-details-container">
-      <div class="d-flex flex-items-center">
-        <span class="flex-shrink-0 ml-n1 mr-n1 mt-n1 mb-n1">
-          <a rel="contributor" data-skip-pjax="true" data-hovercard-type="user" data-hovercard-url="/users/kilo5hz/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/kilo5hz"><img class="avatar avatar-user" src="https://avatars.githubusercontent.com/u/90814817?s=48&amp;v=4" width="24" height="24" alt="@kilo5hz" /></a>
-        </span>
-        <div class="flex-1 d-flex flex-items-center ml-3 min-width-0">
-          <div class="css-truncate css-truncate-overflow">
-            <a class="text-bold Link--primary" rel="contributor" data-hovercard-type="user" data-hovercard-url="/users/kilo5hz/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/kilo5hz">kilo5hz</a>
-
-              <span class="markdown-title">
-                <a data-pjax="true" title="增加gotify推送 (#905)
-
-* 增加gotify推送" class="Link--secondary" href="/whyour/qinglong/commit/0cde9d07eebc39e98d8d58d1cf0e0fb74a0f55a0">增加gotify推送 (</a><a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1052862853" data-permission-text="Title is private" data-url="https://github.com/whyour/qinglong/issues/905" data-hovercard-type="pull_request" data-hovercard-url="/whyour/qinglong/pull/905/hovercard" href="https://github.com/whyour/qinglong/pull/905">#905</a><a data-pjax="true" title="增加gotify推送 (#905)
-
-* 增加gotify推送" class="Link--secondary" href="/whyour/qinglong/commit/0cde9d07eebc39e98d8d58d1cf0e0fb74a0f55a0">)</a>
-              </span>
-          </div>
-
-            <span class="hidden-text-expander ml-1 flex-shrink-0">
-              <button type="button" class="ellipsis-expander js-details-target" aria-expanded="false">&hellip;</button>
-            </span>
-
-          <span class="ml-2">
-            <include-fragment accept="text/fragment+html" src="/whyour/qinglong/commit/0cde9d07eebc39e98d8d58d1cf0e0fb74a0f55a0/rollup?direction=e" class="d-inline"></include-fragment>
-          </span>
+      <include-fragment src="/whyour/qinglong/contributors/develop/sample/notify.py" class="commit-loader">
+        <div class="Box-header d-flex flex-items-center">
+          <div class="Skeleton avatar avatar-user flex-shrink-0 ml-n1 mr-n1 mt-n1 mb-n1" style="width:24px;height:24px;"></div>
+          <div class="Skeleton Skeleton--text col-5 ml-2">&nbsp;</div>
         </div>
-        <div class="ml-3 d-flex flex-shrink-0 flex-items-center flex-justify-end color-fg-muted no-wrap">
-          <span class="d-none d-md-inline">
-            <span>Latest commit</span>
-            <a class="text-small text-mono Link--secondary" href="/whyour/qinglong/commit/0cde9d07eebc39e98d8d58d1cf0e0fb74a0f55a0" data-pjax>0cde9d0</a>
-            <span itemprop="dateModified"><relative-time datetime="2021-11-15T15:04:55Z" class="no-wrap">Nov 15, 2021</relative-time></span>
-          </span>
 
-          <a data-pjax href="/whyour/qinglong/commits/develop/sample/notify.py" class="ml-3 no-wrap Link--primary no-underline">
-            <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-history">
-    <path fill-rule="evenodd" d="M1.643 3.143L.427 1.927A.25.25 0 000 2.104V5.75c0 .138.112.25.25.25h3.646a.25.25 0 00.177-.427L2.715 4.215a6.5 6.5 0 11-1.18 4.458.75.75 0 10-1.493.154 8.001 8.001 0 101.6-5.684zM7.75 4a.75.75 0 01.75.75v2.992l2.028.812a.75.75 0 01-.557 1.392l-2.5-1A.75.75 0 017 8.25v-3.5A.75.75 0 017.75 4z"></path>
-</svg>
-            <span class="d-none d-sm-inline">
-              <strong>History</strong>
-            </span>
-          </a>
+        <div class="Box-body d-flex flex-items-center" >
+          <div class="Skeleton Skeleton--text col-1">&nbsp;</div>
+          <span class="color-fg-danger h6 loader-error">Cannot retrieve contributors at this time</span>
         </div>
-      </div>
-        <div class="Details-content--hidden ml-5 mt-2"><pre class="mt-2 f6 ws-pre-wrap">* 增加gotify推送</pre></div>
-
-  </div>
-
-  <div class="Box-body d-flex flex-items-center flex-auto border-bottom-0 flex-wrap" >
-    <details class="details-reset details-overlay details-overlay-dark lh-default color-fg-default float-left mr-3" id="blob_contributors_box">
-      <summary class="Link--primary">
-        <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-people">
-    <path fill-rule="evenodd" d="M5.5 3.5a2 2 0 100 4 2 2 0 000-4zM2 5.5a3.5 3.5 0 115.898 2.549 5.507 5.507 0 013.034 4.084.75.75 0 11-1.482.235 4.001 4.001 0 00-7.9 0 .75.75 0 01-1.482-.236A5.507 5.507 0 013.102 8.05 3.49 3.49 0 012 5.5zM11 4a.75.75 0 100 1.5 1.5 1.5 0 01.666 2.844.75.75 0 00-.416.672v.352a.75.75 0 00.574.73c1.2.289 2.162 1.2 2.522 2.372a.75.75 0 101.434-.44 5.01 5.01 0 00-2.56-3.012A3 3 0 0011 4z"></path>
-</svg>
-        <strong>5</strong>
-        
-        contributors
-      </summary>
-      <details-dialog
-        class="Box Box--overlay d-flex flex-column anim-fade-in fast"
-        aria-label="Users who have contributed to this file"
-        src="/whyour/qinglong/contributors-list/develop/sample/notify.py" preload>
-        <div class="Box-header">
-          <button class="Box-btn-octicon btn-octicon float-right" type="button" aria-label="Close dialog" data-close-dialog>
-            <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-x">
-    <path fill-rule="evenodd" d="M3.72 3.72a.75.75 0 011.06 0L8 6.94l3.22-3.22a.75.75 0 111.06 1.06L9.06 8l3.22 3.22a.75.75 0 11-1.06 1.06L8 9.06l-3.22 3.22a.75.75 0 01-1.06-1.06L6.94 8 3.72 4.78a.75.75 0 010-1.06z"></path>
-</svg>
-          </button>
-          <h3 class="Box-title">
-            Users who have contributed to this file
-          </h3>
-        </div>
-        <include-fragment>
-          <span role="status">
-  <span class="sr-only">Loading</span>
-  <svg style="box-sizing: content-box; color: var(--color-icon-primary);" width="32" height="32" viewBox="0 0 16 16" fill="none" data-view-component="true" class="my-3 mx-auto d-block anim-rotate">
-    <circle cx="8" cy="8" r="7" stroke="currentColor" stroke-opacity="0.25" stroke-width="2" vector-effect="non-scaling-stroke" />
-    <path d="M15 8a7.002 7.002 0 00-7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" vector-effect="non-scaling-stroke" />
-</svg></span>
-
-        </include-fragment>
-      </details-dialog>
-    </details>
-      <span class="">
-    <a class="avatar-link" data-hovercard-type="user" data-hovercard-url="/users/Oreomeow/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/whyour/qinglong/commits/develop/sample/notify.py?author=Oreomeow">
-      <img class="avatar mr-2 avatar-user" src="https://avatars.githubusercontent.com/u/62660101?s=48&amp;v=4" width="24" height="24" alt="@Oreomeow" /> 
-</a>    <a class="avatar-link" data-hovercard-type="user" data-hovercard-url="/users/Zy143L/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/whyour/qinglong/commits/develop/sample/notify.py?author=Zy143L">
-      <img class="avatar mr-2 avatar-user" src="https://avatars.githubusercontent.com/u/21352718?s=48&amp;v=4" width="24" height="24" alt="@Zy143L" /> 
-</a>    <a class="avatar-link" data-hovercard-type="user" data-hovercard-url="/users/whyour/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/whyour/qinglong/commits/develop/sample/notify.py?author=whyour">
-      <img class="avatar mr-2 avatar-user" src="https://avatars.githubusercontent.com/u/22700758?s=48&amp;v=4" width="24" height="24" alt="@whyour" /> 
-</a>    <a class="avatar-link" data-hovercard-type="user" data-hovercard-url="/users/Sowevo/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/whyour/qinglong/commits/develop/sample/notify.py?author=Sowevo">
-      <img class="avatar mr-2 avatar-user" src="https://avatars.githubusercontent.com/u/31763582?s=48&amp;v=4" width="24" height="24" alt="@Sowevo" /> 
-</a>    <a class="avatar-link" data-hovercard-type="user" data-hovercard-url="/users/kilo5hz/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/whyour/qinglong/commits/develop/sample/notify.py?author=kilo5hz">
-      <img class="avatar mr-2 avatar-user" src="https://avatars.githubusercontent.com/u/90814817?s=48&amp;v=4" width="24" height="24" alt="@kilo5hz" /> 
-</a>
-</span>
-
-  </div>
-    </div>
+</include-fragment>    </div>
 
 
 

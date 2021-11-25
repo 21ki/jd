@@ -19,18 +19,18 @@
 
   <link crossorigin="anonymous" media="all" integrity="sha512-1G4rYJktwRTQKn7fVfJUxH8RRZFUJlGo77xMZfBfIhZPx4BHVrzPE1VgnafttXI8G3y/PywH3uXyhNkSLp3+oA==" rel="stylesheet" href="https://github.githubassets.com/assets/light-d46e2b60992dc114d02a7edf55f254c4.css" /><link crossorigin="anonymous" media="all" integrity="sha512-hI5b2oqTE9njfjYrfuzXqA4bSGSNrE5OMc9IiFhZy+RDGg9Qn4Si1A97o0MlinlwFt3xAifvoLX0s7jHmHSvVw==" rel="stylesheet" href="https://github.githubassets.com/assets/dark-848e5bda8a9313d9e37e362b7eecd7a8.css" /><link data-color-theme="dark_dimmed" crossorigin="anonymous" media="all" integrity="sha512-klQdb3t14AYaRMkB0v9buaf5Ftfbec/sbxdkvyQpG6oBvzZxxH6N5QwA4llOyZsoyjqiZaTra2ci5TgInnLqQg==" rel="stylesheet" data-href="https://github.githubassets.com/assets/dark_dimmed-92541d6f7b75e0061a44c901d2ff5bb9.css" /><link data-color-theme="dark_high_contrast" crossorigin="anonymous" media="all" integrity="sha512-CBsfpBvg1D/Hvn8FFY4JwUVgoKjgynOSFKwgThDHrHASVid/Isgz0ueab5xSuSVx8vEvNL9UfYcpWIJRJYTCjg==" rel="stylesheet" data-href="https://github.githubassets.com/assets/dark_high_contrast-081b1fa41be0d43fc7be7f05158e09c1.css" /><link data-color-theme="dark_colorblind" crossorigin="anonymous" media="all" integrity="sha512-09ipkynAtzCqasl2D2//N51bUOVnOzBFdadcXdMWyphI81s1FWmJ9AD1NRq3e0PMfiJEiVSm9mjTYd7gv2xtWA==" rel="stylesheet" data-href="https://github.githubassets.com/assets/dark_colorblind-d3d8a99329c0b730aa6ac9760f6fff37.css" /><link data-color-theme="light_colorblind" crossorigin="anonymous" media="all" integrity="sha512-OJwnC/pGdOV3QMoWud8vp0nxtQhtzAcpNWB7mSSh/e7fPslExSb07EOdNTAJsBAS4bN7Yrdxm2F7htANgTIMsA==" rel="stylesheet" data-href="https://github.githubassets.com/assets/light_colorblind-389c270bfa4674e57740ca16b9df2fa7.css" /><link data-color-theme="light_high_contrast" crossorigin="anonymous" media="all" integrity="sha512-5swg0RJGlhj0UH3SLkJ6e/BYm/DmpyGTaUSCUBhf1HtC4lBV+zM9mxOQ8febH318pxcUzUpp09qi0z7EKfWuDQ==" rel="stylesheet" data-href="https://github.githubassets.com/assets/light_high_contrast-e6cc20d112469618f4507dd22e427a7b.css" />
   <link crossorigin="anonymous" media="all" integrity="sha512-T3N453hWCYsL8yKfu3yye2yyO/D51Lq2iT5svAdl7UKvV2rBPcV7iOgr3fihzB9vYV7YFIK3PxpyTTkfxAshog==" rel="stylesheet" href="https://github.githubassets.com/assets/frameworks-4f7378e77856098b0bf3229fbb7cb27b.css" />
-    <link crossorigin="anonymous" media="all" integrity="sha512-pAu2IAk7fo0CCC7BXQoZqOpakNWbQ24PcGFe/tnPfhmlsNmlZSBj1+sTX18P/9ql6rVEf8hyXQ5rDOVzaOE9IA==" rel="stylesheet" href="https://github.githubassets.com/assets/behaviors-a40bb620093b7e8d02082ec15d0a19a8.css" />
-    <link crossorigin="anonymous" media="all" integrity="sha512-MCJFYfbQoT4EXC6aWx5Wghs8FC/jslHEeN2iWXphliccmede2dQlhIBTAUCBq9Yu5poltu4askungzvyCsycGg==" rel="stylesheet" href="https://github.githubassets.com/assets/tab-size-fix-30224561f6d0a13e045c2e9a5b1e5682.css" />
-    
-    
-    
-    <link crossorigin="anonymous" media="all" integrity="sha512-VmSSZ1upkEtocudA/V2kV4lxbVeN4JSv1bqW85kL1t8IpXzgsDU0837IGp2lM24g6OUT7cTDQ1hTj1ApBUJ4mg==" rel="stylesheet" href="https://github.githubassets.com/assets/github-566492675ba9904b6872e740fd5da457.css" />
+  <link crossorigin="anonymous" media="all" integrity="sha512-pAu2IAk7fo0CCC7BXQoZqOpakNWbQ24PcGFe/tnPfhmlsNmlZSBj1+sTX18P/9ql6rVEf8hyXQ5rDOVzaOE9IA==" rel="stylesheet" href="https://github.githubassets.com/assets/behaviors-a40bb620093b7e8d02082ec15d0a19a8.css" />
+  <link crossorigin="anonymous" media="all" integrity="sha512-MCJFYfbQoT4EXC6aWx5Wghs8FC/jslHEeN2iWXphliccmede2dQlhIBTAUCBq9Yu5poltu4askungzvyCsycGg==" rel="stylesheet" href="https://github.githubassets.com/assets/tab-size-fix-30224561f6d0a13e045c2e9a5b1e5682.css" />
+  
+  
+  
+  <link crossorigin="anonymous" media="all" integrity="sha512-VmSSZ1upkEtocudA/V2kV4lxbVeN4JSv1bqW85kL1t8IpXzgsDU0837IGp2lM24g6OUT7cTDQ1hTj1ApBUJ4mg==" rel="stylesheet" href="https://github.githubassets.com/assets/github-566492675ba9904b6872e740fd5da457.css" />
 
   <script crossorigin="anonymous" defer="defer" integrity="sha512-K/kjAAGVhlckApEbskyYOB+ASq3m0GKyJk3y0JoEafwknEbUpmilodEuQQJG09c0v1eCRlX7mSQp+GLGtXmWQg==" type="application/javascript" src="https://github.githubassets.com/assets/environment-2bf92300.js"></script>
     <script crossorigin="anonymous" defer="defer" integrity="sha512-oBDjsGOOnyhlA5UdJdsqQzoij+eSWL6RSaWwVH1rDeFBEF4uXgY2qvYkGz7GGEXL43PMXoO+HJk3pOOTnW7Snw==" type="application/javascript" src="https://github.githubassets.com/assets/chunk-frameworks-a010e3b0.js"></script>
-    <script crossorigin="anonymous" defer="defer" integrity="sha512-0V9Fd8M3m9Oyyf9rHecTlZSRgbXXBHpY/Ah7zt+gaahbB9q3KX4TghmHg+2Gxlxabiu7HsrhyHEWFMJ88Oukpw==" type="application/javascript" src="https://github.githubassets.com/assets/chunk-vendor-d15f4577.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-pEuiC5g/bPxJ6DWhOK4vgGNJ82p1B9O9OrUM4c8qCrzkZqAsDILOk8S3wr7ToHsGAa0UOyM7Y4dscERce7tARQ==" type="application/javascript" src="https://github.githubassets.com/assets/chunk-vendor-a44ba20b.js"></script>
   
-  <script crossorigin="anonymous" defer="defer" integrity="sha512-ktOcjy/yAmHvLU21MZo7rNekFcJVmwQaVlqAoxfbYoTti2j9gHkd8iwGpjDTjFMn/AulzuA1vf8zFkq+VCDQMg==" type="application/javascript" src="https://github.githubassets.com/assets/behaviors-92d39c8f.js"></script>
+  <script crossorigin="anonymous" defer="defer" integrity="sha512-k0TI6X55JNdfWcUCjaUF6UB/Y/UrHsNCX215ny8X5o8DdcT8EXYpEwYLmLrkchvGJu6w3/TKcVI0YgcddlOtyg==" type="application/javascript" src="https://github.githubassets.com/assets/behaviors-9344c8e9.js"></script>
   
     <script crossorigin="anonymous" defer="defer" integrity="sha512-ODZJzCJpaOfusrIka5QVZQcPiO9LBGyrrMYjhhJWSLuCN5WbZ5xiEiiOPOKVu71dqygyRdB2TY7AKPA1J5hqdg==" type="application/javascript" data-module-id="./chunk-unveil.js" data-src="https://github.githubassets.com/assets/chunk-unveil-383649cc.js"></script>
     <script crossorigin="anonymous" defer="defer" integrity="sha512-emPgUbSwW9ezLCgRnTE7n4fbbfc/MqEEDHmnkmG61dTyjWKHTYKN4wN3OPS7SY0fwmSJ8mB5+gng2nZw4/HsUg==" type="application/javascript" data-module-id="./chunk-animate-on-scroll.js" data-src="https://github.githubassets.com/assets/chunk-animate-on-scroll-7a63e051.js"></script>
@@ -103,8 +103,8 @@
   <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
   <meta property="fb:app_id" content="1401488693436528">
   <meta name="apple-itunes-app" content="app-id=1477376905" />
-    <meta name="twitter:image:src" content="https://opengraph.githubassets.com/a72abda197a3f977bce11de20f89b60fc06665019f69a14a76c1fdb6ebbeb07a/whyour/qinglong" /><meta name="twitter:site" content="@github" /><meta name="twitter:card" content="summary_large_image" /><meta name="twitter:title" content="qinglong/notify.js at develop · whyour/qinglong" /><meta name="twitter:description" content="支持python3、javaScript、shell、typescript 的定时任务管理面板（A timed task management panel that supports typescript, javaScript, python3, and shell） - qinglong/notify.js at develop · whyour/qinglong" />
-    <meta property="og:image" content="https://opengraph.githubassets.com/a72abda197a3f977bce11de20f89b60fc06665019f69a14a76c1fdb6ebbeb07a/whyour/qinglong" /><meta property="og:image:alt" content="支持python3、javaScript、shell、typescript 的定时任务管理面板（A timed task management panel that supports typescript, javaScript, python3, and shell） - qinglong/notify.js at develop · whyour/qinglong" /><meta property="og:image:width" content="1200" /><meta property="og:image:height" content="600" /><meta property="og:site_name" content="GitHub" /><meta property="og:type" content="object" /><meta property="og:title" content="qinglong/notify.js at develop · whyour/qinglong" /><meta property="og:url" content="https://github.com/whyour/qinglong" /><meta property="og:description" content="支持python3、javaScript、shell、typescript 的定时任务管理面板（A timed task management panel that supports typescript, javaScript, python3, and shell） - qinglong/notify.js at develop · whyour/qinglong" />
+    <meta name="twitter:image:src" content="https://opengraph.githubassets.com/28b4eddd99f3dcd56ce1952c1d189b6729979f3fa5a8a5cbee3500d3c1651852/whyour/qinglong" /><meta name="twitter:site" content="@github" /><meta name="twitter:card" content="summary_large_image" /><meta name="twitter:title" content="qinglong/notify.js at develop · whyour/qinglong" /><meta name="twitter:description" content="支持python3、javaScript、shell、typescript 的定时任务管理面板（A timed task management panel that supports typescript, javaScript, python3, and shell） - qinglong/notify.js at develop · whyour/qinglong" />
+    <meta property="og:image" content="https://opengraph.githubassets.com/28b4eddd99f3dcd56ce1952c1d189b6729979f3fa5a8a5cbee3500d3c1651852/whyour/qinglong" /><meta property="og:image:alt" content="支持python3、javaScript、shell、typescript 的定时任务管理面板（A timed task management panel that supports typescript, javaScript, python3, and shell） - qinglong/notify.js at develop · whyour/qinglong" /><meta property="og:image:width" content="1200" /><meta property="og:image:height" content="600" /><meta property="og:site_name" content="GitHub" /><meta property="og:type" content="object" /><meta property="og:title" content="qinglong/notify.js at develop · whyour/qinglong" /><meta property="og:url" content="https://github.com/whyour/qinglong" /><meta property="og:description" content="支持python3、javaScript、shell、typescript 的定时任务管理面板（A timed task management panel that supports typescript, javaScript, python3, and shell） - qinglong/notify.js at develop · whyour/qinglong" />
     
 
 
@@ -114,7 +114,7 @@
   <link rel="assets" href="https://github.githubassets.com/">
   
 
-  <meta name="request-id" content="0402:5878:3C7064:48BE40:619E0E7C" data-pjax-transient="true"/><meta name="html-safe-nonce" content="959e7c94be30b35ed86dbb07426b2f42b1a790e59104501e59b997169f1ad202" data-pjax-transient="true"/><meta name="visitor-payload" content="eyJyZWZlcnJlciI6IiIsInJlcXVlc3RfaWQiOiIwNDAyOjU4Nzg6M0M3MDY0OjQ4QkU0MDo2MTlFMEU3QyIsInZpc2l0b3JfaWQiOiI2MTUzNjczNDU1MDc3MDM1NjQ0IiwicmVnaW9uX2VkZ2UiOiJzZWEiLCJyZWdpb25fcmVuZGVyIjoic2VhIn0=" data-pjax-transient="true"/><meta name="visitor-hmac" content="992643471d4c8e84c0ec8bc0f733a5a45067281f683ecdb61439af4ee3de9c77" data-pjax-transient="true"/>
+  <meta name="request-id" content="07C2:0ED4:8EF318:110A088:619EEC1E" data-pjax-transient="true"/><meta name="html-safe-nonce" content="d6344aab9f225905b88d070ad828ad9206d5e36c40e1647907e262ea426f4206" data-pjax-transient="true"/><meta name="visitor-payload" content="eyJyZWZlcnJlciI6IiIsInJlcXVlc3RfaWQiOiIwN0MyOjBFRDQ6OEVGMzE4OjExMEEwODg6NjE5RUVDMUUiLCJ2aXNpdG9yX2lkIjoiMzkzMTYyNzMzODQyNzg3MzU4IiwicmVnaW9uX2VkZ2UiOiJpYWQiLCJyZWdpb25fcmVuZGVyIjoiaWFkIn0=" data-pjax-transient="true"/><meta name="visitor-hmac" content="9a40226c5e8076ff445f42ce0833ac14423bfe68cffb15b6f21347d434580207" data-pjax-transient="true"/>
 
     <meta name="hovercard-subject-tag" content="repository:347404990" data-pjax-transient>
 
@@ -156,10 +156,10 @@
 
     <meta name="enabled-features" content="MARKETPLACE_PENDING_INSTALLATIONS,FILE_UPLOAD_CURSOR_POSITION">
 
-  <meta http-equiv="x-pjax-version" content="ced6cdd40099d643162397be6ddeaba8e0a6dfc0c78695d9ba5f1e4bdf4c1128">
+  <meta http-equiv="x-pjax-version" content="a832b37c08b3e78df6ec377806e43758194cd5c22356ceca2e902cd1861684e1">
   <meta http-equiv="x-pjax-csp-version" content="9ea82e8060ac9d44365bfa193918b70ed58abd9413362ba412abb161b3a8d1b6">
   <meta http-equiv="x-pjax-css-version" content="49d339c8792c24d5fa8103c5556759f04f67e75a6c7f8d104a2eea524df8c90b">
-  <meta http-equiv="x-pjax-js-version" content="59fc84afd383f86f05cde6c0b40f03d4a1eb7bdedf9071387a7c9e54dc11667f">
+  <meta http-equiv="x-pjax-js-version" content="37239e3770094982a4ee5ef5289318f96dda432abbca25accfa9812ac257002f">
   
 
     
@@ -474,7 +474,7 @@
           spellcheck="false"
           autocomplete="off"
         >
-        <input type="hidden" data-csrf="true" class="js-data-jump-to-suggestions-path-csrf" value="CIYGwewck+Yg8lQwfd3T0pQffs012eqXxKDX9DVVqhj2dOO9PTrDSf5y3xshAXujCd7H9tfKYnxcMoGItueQlQ==" />
+        <input type="hidden" data-csrf="true" class="js-data-jump-to-suggestions-path-csrf" value="P+bDipZeLledvQIdaz+seWPq5QyaIhwQGEvBEYOvnBkG+ifOIvRnazGif7vo8DzD+zD6l8KvTTDbAKzpGfUvTQ==" />
         <input type="hidden" class="js-site-search-type-field" name="type" >
             <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" aria-hidden="true" class="mr-1 header-search-key-slash"><path fill="none" stroke="#979A9C" opacity=".4" d="M3.5.5h12c1.7 0 3 1.3 3 3v13c0 1.7-1.3 3-3 3h-12c-1.7 0-3-1.3-3-3v-13c0-1.7 1.3-3 3-3z"></path><path fill="#979A9C" d="M11.8 6L8 15.1h-.9L10.8 6h1z"></path></svg>
 
@@ -781,7 +781,7 @@
 </a>      <a
         class="social-count js-social-count"
         href="/whyour/qinglong/stargazers"
-        aria-label="3971 users starred this repository"
+        aria-label="3980 users starred this repository"
         data-singular-suffix="user starred this repository"
         data-plural-suffix="users starred this repository"
       >
@@ -805,7 +805,7 @@
   <a
     href="/whyour/qinglong/network/members"
     class="social-count"
-    aria-label="1302 users forked this repository"
+    aria-label="1306 users forked this repository"
   >
     1.3k
   </a>
@@ -848,7 +848,7 @@
     <path d="M8 9.5a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"></path><path fill-rule="evenodd" d="M8 0a8 8 0 100 16A8 8 0 008 0zM1.5 8a6.5 6.5 0 1113 0 6.5 6.5 0 01-13 0z"></path>
 </svg>
           <span data-content="Issues">Issues</span>
-            <span id="issues-repo-tab-count" data-pjax-replace="" title="117" data-view-component="true" class="Counter">117</span>
+            <span id="issues-repo-tab-count" data-pjax-replace="" title="119" data-view-component="true" class="Counter">119</span>
 
 
     
