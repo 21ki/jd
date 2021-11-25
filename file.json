@@ -65,6 +65,24 @@
       "id": "jdCookie.js",
       "path": "./qinglong",
       "tpye": "js"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/shufflewzc/VIP/main/Scripts/sh/1customCDN.sh",
+      "id": "1customCDN.sh",
+      "path": "./qinglong",
+      "tpye": "sh"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/shufflewzc/VIP/main/Scripts/sh/ql.sh",
+      "id": "ql_install.sh",
+      "path": "./qinglong",
+      "tpye": "sh"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/shufflewzc/QLDependency/main/Shell/QLOneKeyDependency.sh",
+      "id": "QLOneKeyDependency.sh",
+      "path": "./qinglong",
+      "tpye": "sh"
     }
   ]
 }
