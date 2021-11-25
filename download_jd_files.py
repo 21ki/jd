@@ -23,8 +23,8 @@ data_file = "./file.json"
 
 def Download(url, path, id):
     try:
-        r = requests.get(url, timeout=(5, 10))
-        print(r.request.url)
+        r = requests.get("https://ghproxy.com/" + url, timeout=(5, 10))
+        print('This is a \033[1;31m ' + r.request.url + '\033[0m!')
         if r.status_code == 200:
             if not os.path.exists(path):
                 os.makedirs(path)
