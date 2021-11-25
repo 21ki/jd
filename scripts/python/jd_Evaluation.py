@@ -1,14 +1,10 @@
 # !/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# @Time : 2021/10/30 10:58
-# 京东自动评价
 '''
 项目名称: JD-Script / jd_Evaluation
 Author: qiu_lzsnmb
-功能：全自动完成评价+晒单，提高京享值，满足强迫症
-Date: 2021/10/30 上午10:58
-update: 2021.11.6 13:21
-建议cron: 0 0 8 ? * WED  python3 jd_Evaluation.py
+envnew Env('自动评价');
+cron: 0 0 8 ? * 
 '''
 import os
 import random
