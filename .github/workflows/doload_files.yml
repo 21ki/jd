@@ -36,7 +36,7 @@ jobs:
       run: echo "::set-output name=YN::$(git diff --quiet || echo 'dirty')"
 
     - name: Commit files
-      if: steps.IFFI.outputs.YN == 'dirty'
+      #if: steps.IFFI.outputs.YN == 'dirty'
       run: |
         git config --local user.email "21kixc@gmail.com"
         git config --local user.name "21ki"
@@ -44,7 +44,7 @@ jobs:
         git commit -m "sync-bot"
 
     - name: Push changes
-      if: steps.IFFI.outputs.YN == 'dirty'
+      #if: steps.IFFI.outputs.YN == 'dirty'
       uses: ad-m/github-push-action@master
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
