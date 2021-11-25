@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python3 python
 # -*- coding:utf-8 _*-
 """
 @Author:Myki
@@ -10,14 +10,20 @@
 import sys
 import os
 import json
-import requests
+try:
+    import requests
+except Exception as e:
+    print(e, "\n缺少requests 模块，请执行命令安装：pip3 install requests")
+    #exit(3)
+    os.system('pip3 install requests')
+
 
 data_file = "./file.json"
 
 
 def Download(url, path, id):
     try:
-        r = requests.get(url, allow_redirects=True, timeout=(5, 10))
+        r = requests.get(url, timeout=(5, 10))
         print(r.request.url)
         if r.status_code == 200:
             if not os.path.exists(path):
