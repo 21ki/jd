@@ -10,8 +10,28 @@ new Env('debuenv');
 
 """
 import os
-#第二种获取所有变量
-for k, v in os.environ.items():
-    print("%s=%s" % (k, v))
-SYSTEM_TIME= os.system('date')
-print('This is a \033[1;31m ' + SYSTEM_TIME + '\033[0m!')
+import subprocess
+
+
+def get_env():
+    # 第二种获取所有变量
+    for k, v in os.environ.items():
+        print("%s=%s" % (k, v))
+
+
+def subprocess_():
+    """
+    subprocess模块执行linux命令
+    :return:
+    """
+    subprocess.call("date")  # 执行ls命令
+
+
+def main():
+    subprocess_()  # 方法1
+    get_env()
+
+
+if __name__ == '__main__':
+    main()
+
