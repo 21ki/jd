@@ -4,7 +4,7 @@
 项目名称: JD-Script / jd_Evaluation
 Author: qiu_lzsnmb
 envnew Env('自动评价');
-cron: 30 9 * * *
+cron: 01 11 */7 * *
 '''
 import os
 import random
