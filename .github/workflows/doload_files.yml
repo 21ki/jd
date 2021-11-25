@@ -30,6 +30,7 @@ jobs:
 
     - name: Commit files
       #if: steps.IFFI.outputs.YN == 'dirty'
+      continue-on-error: true
       run: |
         git config --local user.email "21kixc@gmail.com"
         git config --local user.name "21ki"
@@ -45,6 +46,7 @@ jobs:
 
     - name: Push changes
       #if: steps.IFFI.outputs.YN == 'dirty'
+      continue-on-error: true
       uses: ad-m/github-push-action@master
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
