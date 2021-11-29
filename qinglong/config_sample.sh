@@ -1,6 +1,6 @@
 ## Version: v2.8.0
 ## Date: 2021-06-20
-## Mod: Build20211009-001
+## Mod: Build20211128-002
 ## Update Content: 可持续发展纲要\n1. session管理破坏性修改\n2. 配置管理可编辑config下文件\n3. 自定义脚本改为查看脚本\n4. 移除互助相关
 
 ## 上面版本号中，如果第2位数字有变化，那么代表增加了新的参数，如果只有第3位数字有变化，仅代表更新了注释，没有增加新的参数，可更新可不更新
@@ -197,83 +197,66 @@ case $1 in
         ;;
 esac
 
-## 11. 随机Cookie
-## Cookie 按随机顺序参加活动。取消 # 注释后，填 1 表示开启功能。
-# RandomMode=""
-## 从原 Cookie 中随机提取指定数量的 Cookie 参加活动，当 RandomMode="1" 时生效。取消 # 注释后，赋值后生效。
-### 赋值要求："空值"、"非数字"、"小于2或大于 Cookie 总数的数值"，均自动调整为全部 Cookie 按随机顺序参加活动；
-###           "大于或等于2，且小于或等于 Cookie 总数的数值"，抽取指定数值的 Cookie 按随机顺序参数活动。
-# ran_num=""
-## 如果想指定活动进行随机模式，可以参考下面 case 这个命令的例子来控制
-## case $1 in
-##     *jd_fruit*)                            # 东东农场活动脚本关键词
-##         RandomMode="1"                     # 东东农场开启随机模式
-##         ran_num=""                         # 东东农场全部 Cookie 按随机顺序参加活动
-##         ;;
-##     *jd_dreamFactory* | *jd_jdfactory*)    # 京喜工厂和东东工厂的活动脚本关键词
-##         RandomMode="1"                     # 京喜工厂和东东工厂开启随机模式
-##         ran_num="5"                        # 京喜工厂和东东工厂抽取指定 5 个 Cookie 按随机顺序参数活动。
-##         ;;
-##    *)                                      # 必选项。其他活动
-##         RandomMode=""                      # 必选项。默认为空值，表示其他帐号均不开启随机模式。
-##         ran_num=""                         # 必选项。默认为空值。若 RandomMode="1" 且此处赋值，表示其他活动均抽取指定数值的 Cookie 按随机顺序参数活动。
-##        ;;
-## esac
-case $1 in
-    *jd_fruit*)
-        RandomMode=""
-        ran_num=""
-        ;;
-    *jd_dreamFactory* | *jd_jdfactory*)
-        RandomMode=""
-        ran_num=""
-        ;;
-    *)
-        RandomMode=""
-        ran_num=""
-        ;;
-esac
+## 11 重组Cookie
+### 分为 随机、优先、轮换、组队和分段 5 种模式：
+### 1、随机模式：支持自定义从所有 Cookie 中随机抽取若干数量的账号按随机顺序参加活动；
+### 2、优先模式：支持自定义前若干数量的账号固定按照正常顺序参加活动，其余账号按随机顺序参加活动；
+### 3、轮换模式：支持自定义前若干数量的账号固定按照正常顺序参加活动，其余账号按轮换模式参加活动。所谓轮换就是指若干数量的账号每过一天挪动到 Cookie 队伍末尾；
+### 4、组队模式：只支持 js 脚本。根据游戏规则每支队伍的成员数量、每个账号能发起的组队次数上限自动按顺序参加活动。
+### 5、分段模式：只支持 js 脚本。支持自定义按若干数量拆分账号，按分段顺序参加活动。支持各段启动活动脚本的延迟时间。
+### 其他说明：①全局模式和局部模式可同时生效；
+###           ②支持黑名单模式(即不使用该模式，详见 局部模式环境变量 recombin_ck_envs 说明)；
 
-## 12. 组队环境变量
-### 环境变量填写要求较高，建议群组内确认填写结果
-scr_name="$1"                                 ## 不可删除
-case $1 in
-    *jd_teamAnjia*)                           ## 安佳组队瓜分京豆
-        teamer_num="5"                        ## 单个队伍中的总账号数为 80 个
-        team_num="20"                         ## 每个账号发起组队的最大队伍数为 3 个
-        ;;
-    *jd_jxlhb*)                               ## 京喜领88元红包
-        teamer_num="80"                       ## 单个队伍中的总账号数为 80 个
-        team_num="3"                          ## 每个账号发起组队的最大队伍数为 3 个
-        ;;
-    *jd_sendBean* | *jd_sddd*)                ## 送豆得豆活动脚本关键词
-        teamer_num="11"                       ## 单个队伍中的总账号数为 11 个
-        team_num="1"                          ## 每个账号发起组队的最大队伍数为 1 个
-        ;;
-    *xmGame*)                                 ## 小米-星空大冒险活动脚本关键词
-        teamer_num="11"                       ## 单个队伍中的总账号数为 11 个
-        team_num="1"                          ## 每个账号发起组队的最大队伍数为 1 个
-        ;;
-    *jd_zdjr*)                                ## 组队瓜分京豆活动脚本关键词
-        teamer_num="5 5 5 5"                  ## 对应各个活动中单个队伍中的总账号数分别为 5 5 5 5 个
-        team_num="2 3 3 5"                    ## 对应各个活动中每个账号发起组队的最大队伍数为 2 3 3 5 个
-        activityId=(                          ## 活动 activityId；需手动抓包。按数组分行填写至括号内
-          54f071f4eb794092a872392696be7d8d
-          0582063f78434ed599becfc8f812c2ee
-          bbda11ba7a9644148d65c8b0b78f0bd2
-          92c03af2ce744f6f94de181ccee15e4f
-        )
-        activityUrl=(                         ## 活动 activityUrl；需手动抓包。按数组分行填写至括号内
-          https://cjhydz-isv.isvjcloud.com
-          https://lzkjdz-isv.isvjcloud.com
-          https://lzkjdz-isv.isvjcloud.com
-          https://cjhydz-isv.isvjcloud.com
-        )
-        ;;
-    *)                                        ## 不可删除
-        scr_name=""                           ## 不可删除
-        ;;                                    ## 不可删除
-esac
+## 11.1 全局模式选项
+### 赋值要求：①只能填 1 2 3 4 ，分别表示随机、优先、轮换、组队四种模式，对全部脚本有效(除非 recombin_ck_envs 另有设定)；
+###           ②若填写为其他内容，则全部账号按正常顺序参加活动(除非 recombin_ck_envs 另有设定)；
+Recombin_CK_Mode=""
+
+### 模式参数 1
+### 释义：①在随机模式下：表示随意抽取 N 个账号随机顺序参加活动；
+###       ②在优先模式和轮换模式下：表示前 N 个账号固定按正常顺序参加活动；
+###       ③在组队模式下：表示每支队伍的成员数量；
+###       ④在分段模式下：表示每个分段的账号数量；
+### 赋值要求：①只能填不大于 Cookie 总数的正整数，对全部脚本有效(除非 recombin_ck_envs 另有设定)；
+###           ②随机模式和分段模式下：若填写数值大于或等于 Cookie 总数，则全部账号随机顺序参加活动(除非 recombin_ck_envs 另有设定)；
+###           ③若填写为其他内容，则全部账号按正常顺序参加活动(除非 recombin_ck_envs 另有设定)；
+Recombin_CK_ARG1=""
+
+### 模式参数 2
+### 释义：①在随机模式和优先模式下：无意义；
+###       ②轮换模式下：表示自定义 N 个账号/天参加轮换；
+###       ③在组队模式下：表示每个账号发起组队的次数；
+###       ③在组队模式下：表示每个账号发起组队的次数；
+###       ④在分段模式下：表示每个分段启动活动脚本的延迟时间，单位：秒；
+### 赋值要求：①轮换模式下：只能填不大于参与轮换账号数量(即：总Cookie数量-固定Cookie数量)的正整数，对全部脚本有效(除非 recombin_ck_envs 另有设定)；
+###           ②轮换模式下：若填写为其他内容或留空，则自动调整为按天计算轮换账号的数量(即：轮换账号数量÷当月总天数的商值，取下整数)，对全部脚本有效(除非 recombin_ck_envs 另有设定)；
+###           ③组队模式下：若填写为其他内容或留空，则自动退出模式。
+###           ④分段模式下：若填写为其他内容或留空，则自动退出模式。(为了避免多段并发运行脚本造成死机)；
+Recombin_CK_ARG2=""
+
+## 重组Cookie前是否剔除失效Cookie
+### 释义：①如果开启，会在模式参数已设定的情况下，执行任务前进行 Cookie 有效性验证并剔除失效的 Cookie。受 Cookie 总数量影响任务启动的即时性；
+### 赋值要求：①填 1 表示开启，填其他内容或空值表示关闭；
+Remove_Void_CK=""
+
+## 11.2 局部模式环境变量
+### 释义：脚本1文件名关键词@参数1@参数2@参数3@参数4@参数5；
+### 赋值要求：①脚本文件名关键词，例如，东东农场的活动脚本关键词 jd_fruit；
+###           ②脚本文件名关键词与各参数采用 @ 连接。释义附后。如果不设定参数1，表示该脚本按正常账号顺序参加活动(即：黑名单)；
+###           ③参数1。表示 Recombin_CK_Mode；
+###           ④参数2。表示 Recombin_CK_ARG1；
+###           ⑤参数3。表示 Recombin_CK_ARG2；
+###           ⑥参数4。只对 组队瓜分京豆脚本 (jd_zdjr) 有效。表示 activityId；
+###           ⑦参数5。只对 组队瓜分京豆脚本 (jd_zdjr) 有效。表示 activityUrl；
+###           ⑧各个活动设定值之间采用 & 连接，例如：jd_cfd&jd_fruit@1@5&jd_pet@2@6&jd_pigPet@3@5&jd_plantBean@3@7@4&jd_jxlhb@4@80@1&jd_zdjr@4@5@3@4240059acf5c449a1a986fa6107897ce1@https://cjhydz-isv.isvjcloud.com；
+###                                              jd_cfd                 脚本按正常账号顺序参加活动
+###                                              jd_fruit@1@5           使用模式：1随机，抽5个CK顺序随机
+###                                              jd_pet@2@6             使用模式：2优先，前6个CK顺序优先，其余CK顺序随机
+###                                              jd_pigPet@3@5          使用模式：3轮换，前5个CK顺序固定，根据CK总数和当月天数自动计算每天轮换CK数量
+###                                              jd_plantBean@3@7@4     使用模式：3轮换，前7个CK顺序固定，每天轮换4个CK
+###                                              jd_jxlhb@4@80@1        使用模式：4组队，队伍成员数量80，每个账号组队1次
+###                                              jd_islogin_xh@5@10@15  使用模式：5分段，每段成员数量10，每段延迟时间为15秒
+# recombin_ck_envs="jd_fruit@2@5&jd_pet@2@5&jd_plantBean@2@5&jd_dreamFactory@2@5&jd_jdfactory@2@5&jd_crazy_joy@2@5&jd_jdzz@2@5&jd_jxnc@2@5&jd_bookshop@2@5&jd_cash@2@5&jd_sgmh@2@5&jd_cfd@2@5&jd_health@2@5&jd_carnivalcity@2@5&jd_city@2@5&jd_moneyTree_heip@2@5&jd_jxlhb@4@80@1&jd_88hb@4@80@1&Check&jd_islogin_xh&bean_change"
 
 ## 其他需要的变量，脚本中需要的变量使用 export 变量名= 声明即可
 
@@ -444,6 +427,16 @@ export guaopencard_draw="true"
 export guaunknownTask_addSku_All="true"
 export guaunknownTask_card_All="true"
 export gua_carnivalcity_draw="true"
+export guaopenwait_All="true"
+export guaopencard_draw45="3"
+for ((s=0; s<=100; s++)); do
+    export guaopencard$s="3"
+    export guaopencard_draw$s="3"
+    export guaopencard_addSku$s="true"
+done
+## 6、城城领现金自动抽奖
+export jdJxdExchange="true"
+export JD_CITY_HELPSHARE="false" # false 优先内部助力 | true 优先助力池
 
 # cdle 环境变量
 ## 1、签到领现金兑换
@@ -533,7 +526,20 @@ export BEANCHANGE_PERSENT="10" ##10合1
 ### 每月1号17点后如果执行资产查询，开启京东月资产变动的统计和推送.	
 ### 拆分通知和分组通知的变量都可以兼容.	
 ### 标题按照分组分别为 京东月资产变动 京东月资产变动#2 京东月资产变动#3 	
-### 开启 :  export BEANCHANGE_ENABLEMONTH="true"  
+### 开启 :  export BEANCHANGE_ENABLEMONTH="true"
+### 4.BEANCHANGE_ALLNOTIFY
+### 设置推送置顶公告，&表示换行，公告会出现在资产通知中(包括一对一).
+### 	例子 :  export BEANCHANGE_ALLNOTIFY="你好&今天天气不错...&&哥斯拉大战金刚...."  
+### 	显示:
+### 	
+### 	【✨✨✨✨公告✨✨✨✨】
+### 	 你好
+### 	 今天天气不错...
+### 	 
+### 	 哥斯拉大战金刚.... 
+### 5. BEANCHANGE_ENABLEMONTH
+### 当设定BEANCHANGE_ExJxBeans="true"且时间在17点之后，会自动将临期京豆兑换成喜豆续命.
+export BEANCHANGE_ExJxBeans="true"
 ## [3] sendNotify.js
 ### 1. 通知黑名单
 ### 如果通知标题在此变量里面存在（&隔开），则用屏蔽不发送通知，继承Ninja。例：export NOTIFY_SKIP_LIST="京东CK检测&京东资产变动"
@@ -585,8 +591,26 @@ export PUSH_PLUS_USER_hxtrip=""
 export JOY_GET20WHEN16="true"  ##控制16点才触发20京豆兑换.
 ### 13. CK失效时执行脚本
 export NOTIFY_CKTASK="ccwav_QLScript2_jd_CheckCK.js"
-### 14. 开启月结资产推送
-export BEANCHANGE_ENABLEMONTH="true"
+### 14. 用 WxPusher 进行一对一推送
+### 详细教程有人写了，不知道是幸运还是不幸: https://www.kejiwanjia.com/jiaocheng/27909.html
+### 填写变量 WP_APP_TOKEN_ONE,可在管理台查看: https://wxpusher.zjiecode.com/admin/main/app/appToken
+### 手动建立CK_WxPusherUid.json,可以参考CKName_cache.json,只是nickName改成Uid，
+### 每个用户的uid可在管理台查看: https://wxpusher.zjiecode.com/admin/main/wxuser/list
+### 另外: export WP_APP_ONE_TEXTSHOWREMARK="true"，启用一对一推送标题显示备注信息，默认不启用.
+### CK_WxPusherUid.json 内容(pt_pin 如果是汉字需要填写转码后的!):
+### [
+###   {
+### 	"pt_pin": "ccwav",
+### 	"Uid": "UID_AAAAAAAA"
+###   },
+###   {
+### 	"pt_pin": "中文名",
+### 	"Uid": "BBBBBBBBBB"
+###   }
+### ]
+### 15. NOTIFY_SKIP_TEXT
+### 如果此变量(&隔开)的关键字在通知内容里面存在,则屏蔽不发送通知.
+### 例子 :  export NOTIFY_SKIP_TEXT="忘了种植&异常"
 
 
 # X1a0He 环境变量
@@ -634,3 +658,13 @@ export JD_UNSUB_PLOG="true"
 # jiulan 环境变量
 export JOYPARK_JOY_START="120"     # 只做前几个CK
 export JOY_COIN_MAXIMIZE="1"       # 最大化硬币收益，如果合成后全部挖土后还有空位，则开启此模式（默认关闭） 0关闭 1开启
+
+# ddo
+export JD_CITY_HELPPOOL="true"
+
+# Aaron-lv
+## 1、京东金融签到
+### 添加京东签到 金融签到body兼容，body抓包获取 不同账号不通用
+### 变量名： JD_BEAN_SIGN_BODY
+### 格式： 演示为两个账号，多账号以此类推
+### export JD_BEAN_SIGN_BODY="{\"pin\":\"ck1的pt_pin\",\"body\":\"reqData=xxxx一大串字符\"}&{\"pin\":\"ck2的pt_pin\",\"body\":\"reqData=xxx一大串字符\"}"
