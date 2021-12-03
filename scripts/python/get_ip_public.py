@@ -6,12 +6,13 @@
 @WeChat Official Account(微信公众号)：MykiFan
 @Github:www.github.com  https://github.com/21ki
 cron: 30 9 * * *
-new Env('debuenv');
+new Env('get_ip_public');
 """
 
 import socket
 import requests
 import re
+from sendNotify import send
 
 title = ''
 content = ''
@@ -51,3 +52,4 @@ if __name__ == '__main__':
     print("外网IP：{}".format(IP.get_ip_public()))
     title= "get_ip_public"
     content = IP.get_ip_public()
+    send(title, content) 
