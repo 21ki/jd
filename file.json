@@ -83,6 +83,12 @@
       "id": "QLOneKeyDependency.sh",
       "path": "./qinglong",
       "tpye": "sh"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/shufflewzc/normal-shell/main/onekey-install-nvjdc.sh",
+      "id": "onekey-install-nvjdc.sh",
+      "path": "./qinglong",
+      "tpye": "sh"
     }
   ]
 }
