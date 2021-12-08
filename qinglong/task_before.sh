@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# Build 20211204-002-fix3
+# Build 20211208-001-test
 
 name_js=(
     jd_fruit
@@ -18,7 +18,7 @@ name_js=(
     jd_health
     jd_carnivalcity
     jd_city
-    jd_moneyTree_heip
+    jd_moneyTree
     jd_cfdtx
 )
 name_config=(
@@ -99,6 +99,9 @@ var_name=(
 )
 
 local_scr=$1
+repo_dir_list="$(ls -l /ql/scripts | awk '/^d/ {print $NF}')"
+repo_dir="$(echo $local_scr | awk -F '/' '{print $(NF-1)}')"
+[[ ! $repo_dir_list[@] =~ $repo_dir ]] && local_scr_dir="$dir_scripts" || local_scr_dir="$dir_scripts/$repo_dir"
 
 ## 生成pt_pin清单
 gen_pt_pin_array() {
@@ -319,7 +322,7 @@ Recombin_CK_cal() {
         # 当月总天数
         local total_days=$(cal | grep ^[0-9] | tail -1 | awk -F " " '{print $NF}')
         # 今天几号
-        local today_day=$(date +%d)
+        local today_day=$(date +%-d)
         local combined_all rot_num rot_start_num jdCookie_priority jdCookie_rot_head jdCookie_rot_mid tmp_1 tmp_2 tmp_3 a b c
         # 固定区账号数量
         [[ -n "$(echo $1 | sed -n "/^[0-9]\+$/p")" ]] && fixed_num="$1" || fixed_num="0"
@@ -644,15 +647,28 @@ combine_only() {
     done
 }
 
-## 魔改版 jdCookie.js 复制到 /ql/deps/。仅支持v2.10.8及以上版本的青龙
-[[ -d $dir_dep && -f $dir_config/jdCookie.js ]] && cp -rf $dir_config/jdCookie.js $dir_dep
-## 魔改版 jdCookie.js 和 sendNotify.js 覆盖到 /ql/scripts/及子路径下的所有 jdCookie.js。支持v2.10.8 以下版本的青龙
-for i in jdCookie.js sendNotify.js; do
-    #    [[ -f $dir_config/$i.js ]] && find $dir_scripts ! \( -path "*JDHelloWorld*" -o -path "*ccwav*" \) -type f -name $i|xargs -n 1 cp -rf $dir_config/$i.js && cp -rf $dir_config/$i.js $dir_scripts
-    [[ -f $dir_config/$i.js ]] && find $dir_scripts ! -path "*JDHelloWorld*" -type f -name $i | xargs -n 1 cp -rf $dir_config/$i.js && cp -rf $dir_config/$i.js $dir_scripts
-done
+## 提前替换js基础依赖
+JS_Deps_Replace() {
+    if [ $js_deps_replace_envs ]; then
+        local js_deps_replace_array=($(echo $js_deps_replace_envs | perl -pe "{s|&| |g}"))
+        for i in "${js_deps_replace_array[@]}"; do
+            local tmp_task_array=($(echo $i | perl -pe "{s|@| |g}"))
+            local tmp_script_array=($(echo ${tmp_task_array[0]} | perl -pe "{s/\|/ /g}"))
+            local tmp_skip_repo=($(echo ${tmp_task_array[1]} | perl -pe "{s/\|/ /g}"))
+            for j in "${tmp_script_array[@]}"; do
+                [[ ! ${tmp_skip_repo[@]} =~ $repo_dir ]] && [[ -f $dir_config/$j.js ]] && cp -rvf $dir_config/$j.js $local_scr_dir/$j.js
+            done
+        done
+    fi
+}
 
-TempBlock_CK && Recombin_CK
+## 魔改版 jdCookie.js 复制到 /ql/deps/。仅支持v2.10.8及以上版本的青龙
+## [[ -d $dir_dep && -f $dir_config/jdCookie.js ]] && cp -rf $dir_config/jdCookie.js $dir_dep
+## 魔改版 jdCookie.js 和 sendNotify.js 覆盖到 /ql/scripts/及子路径下的所有 jdCookie.js。支持v2.10.8 以下版本的青龙
+## [[ -f $dir_config/$i.js ]] && find $dir_scripts ! \( -path "*JDHelloWorld*" -o -path "*ccwav*" \) -type f -name $i|xargs -n 1 cp -rf $dir_config/$i.js && cp -rf $dir_config/$i.js $dir_scripts
+## [[ -f $dir_config/$i.js ]] && cp -rf $dir_config/$i.js $local_scr_dir/
+
+TempBlock_CK && Recombin_CK && JS_Deps_Replace
 
 combine_only
 
