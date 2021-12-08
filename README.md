@@ -1,6 +1,6 @@
 ## dev自用备份脚本
 ```
-ql repo https://ghproxy.com/https://github.com/21ki/jd.git "jd_jxz|jd_debug_env|jd_Evaluation|jd_jkd|get_ip_public"
+ql repo https://ghproxy.com/https://github.com/21ki/jd.git "jd_jxz|jd_debug_env|jd_Evaluation|jd_jkd|get_ip_public|jd_jxcfd_cash100"
 
 ```
 #jd_jxz集勋章
