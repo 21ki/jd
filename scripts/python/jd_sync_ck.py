@@ -14,7 +14,7 @@ import json
 import re
 
 data_file = "account.json"
-url = "http://ql.21k.bid:5700/open/auth/token?client_id=_PxUQT_7yqda&client_secret=DU-59spwXA8g9QsfijGmop-H"
+url = ""
 
 payload = {}
 headers = {}
