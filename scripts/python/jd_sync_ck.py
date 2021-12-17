@@ -163,8 +163,8 @@ def main():
         update_json(token_dst_y, expiration_dst_y, "dst_account", dst_count)
 
     files = j['src_account']
-    uncount = 0
-    for item in files:
+    #uncount = 0
+    for uncount,item in enumerate(files):
         time_now = gettimestamp()
         host = item['host']
         id = item['id']
@@ -230,7 +230,7 @@ def main():
 
         else:
             continue
-        uncount += 1
+        #uncount += 1
 
     # 清理重复的CK
     dst_ql_ck_id = getitem(dst_host, dst_token, "JD_COOKIE")
