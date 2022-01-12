@@ -5,6 +5,12 @@
 # @Time         : 2022-01-12 10:18:08
 # @Cron         : 20 0,22 * * *
 # @Desc         : 京东极速版红包-自动提现微信现金
+# @Author       : Kirin Huang
+"""
+cron: 20 20 * * *
+new Env('京东极速版红包-自动提现微信现金');
+"""
+
 
 import requests
 import json
