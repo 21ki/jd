@@ -12,6 +12,7 @@ new Env('京东极速版红包-自动提现微信现金');
 """
 
 
+
 import requests
 import json
 import time
@@ -22,11 +23,14 @@ import random
 import string
 import urllib
 
+def getnowtime():
+    t=str(round(time.time() * 1000))
+    return t
 
-t=str(round(time.time() * 1000))
-choujiangurl='https://api.m.jd.com/?functionId=spring_reward_receive&body={"inviter":"","linkId":"7ya6o83WSbNhrbYJqsMfFA"}&_t='+t+'&appid=activities_platform'
-tixianxinxiurl='https://api.m.jd.com/?functionId=spring_reward_list&body={"pageNum":1,"pageSize":10,"linkId":"7ya6o83WSbNhrbYJqsMfFA","inviter":""}&_t='+t+'&appid=activities_platform'
-tixianurl='https://api.m.jd.com/'
+choujiangurl='https://api.m.jd.com/?functionId=spring_reward_receive&body={"inviter":"","linkId":"7ya6o83WSbNhrbYJqsMfFA"}&_t='+getnowtime()+'&appid=activities_platform'
+tixianxinxiurl='https://api.m.jd.com/?functionId=spring_reward_list&body={"pageNum":1,"pageSize":10,"linkId":"7ya6o83WSbNhrbYJqsMfFA","inviter":""}&_t='+getnowtime()+'&appid=activities_platform'
+tixianurl='https://api.m.jd.com/client.action'
+
 
 
 #以下部分参考Curtin的脚本：https://github.com/curtinlv/JD-Script
@@ -112,10 +116,13 @@ def choujiang(ck):
         response=requests.get(url=choujiangurl,headers=headers)
         amount=json.loads(response.text)['data']['received']['amount']
         useLimit=json.loads(response.text)['data']['received']['useLimit']
-        if useLimit!='':
-            printf(f'获得{useLimit}-{amount}的优惠券\n')
-        else:
+        prizeType=json.loads(response.text)['data']['received']['prizeType']
+        if int(prizeType)==1:
+            printf(f'获得{useLimit}-{amount}的优惠券')
+        if int(prizeType)==2:
             printf(f'获得{amount}现金')
+        if int(prizeType)==4:
+            printf(f'获得{amount}微信红包')
     except:
         printf('抽奖失败，可能是次数用完或者黑号了\n')
 def tixianxinxi(ck):
@@ -135,7 +142,7 @@ def tixianxinxi(ck):
     try:
         response=requests.get(url=tixianxinxiurl,headers=headers)
         for i in range(len(json.loads(response.text)['data']['items'])):
-            if not json.loads(response.text)['data']['items'][i]['couponKind'] and int(json.loads(response.text)['data']['items'][i]['state'])==3 and int(json.loads(response.text)['data']['items'][i]['prizeType']==4):
+            if int(json.loads(response.text)['data']['items'][i]['state'])==0 and int(json.loads(response.text)['data']['items'][i]['prizeType']==4):
                 tixianliebiao.append(str(json.loads(response.text)['data']['items'][i]['id'])+'@'+str(json.loads(response.text)['data']['items'][i]['poolBaseId'])+'@'+str(json.loads(response.text)['data']['items'][i]['prizeGroupId'])+'@'+str(json.loads(response.text)['data']['items'][i]['prizeBaseId']))
     except:
         printf('获取提现列表出错，可能是黑号了\n')
@@ -150,10 +157,10 @@ def tixian(ck,couponId,poolBaseId,prizeGroupId,prizeBaseId):
         'Accept':'application/json, text/plain, */*',
         'User-Agent':UserAgent,
         'Referer':'https://prodev.m.jd.com/',
-        'Content-Length':'277',
+        'Content-Length':'276',
         'Accept-Language':'zh-CN,zh-Hans;q=0.9'
         }
-    data='functionId=apCashWithDraw&body={"businessSource":"SPRING_FESTIVAL_RED_ENVELOPE","base":{"id":%s,"business":null,"poolBaseId":%s,"prizeGroupId":%s,"prizeBaseId":%s,"prizeType":4},"linkId":"7ya6o83WSbNhrbYJqsMfFA","inviter":""}&_t=%s&appid=activities_platform'%(couponId,poolBaseId,prizeGroupId,prizeBaseId,t)
+    data='functionId=apCashWithDraw&body={"businessSource":"SPRING_FESTIVAL_RED_ENVELOPE","base":{"id":%s,"business":null,"poolBaseId":%s,"prizeGroupId":%s,"prizeBaseId":%s,"prizeType":4},"linkId":"7ya6o83WSbNhrbYJqsMfFA","inviter":""}&t=%s&appid=activities_platform'%(int(couponId),int(poolBaseId),int(prizeGroupId),int(prizeBaseId),getnowtime())
     try:
         response=requests.post(url=tixianurl,headers=headers,data=data)
         printf(response.text)
@@ -184,3 +191,4 @@ if __name__ == '__main__':
         if tixianliebiao:
             for i in range(len(tixianliebiao)):
                 tixian(ck,tixianliebiao[i].split('@')[0],tixianliebiao[i].split('@')[1],tixianliebiao[i].split('@')[2],tixianliebiao[i].split('@')[3])
+        printf('\n\n\n')
