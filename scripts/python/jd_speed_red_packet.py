@@ -23,6 +23,8 @@ import random
 import string
 import urllib
 
+BASE_DIR = os.path.split(os.path.abspath(sys.argv[0]))[0]
+
 def getnowtime():
     t=str(round(time.time() * 1000))
     return t
