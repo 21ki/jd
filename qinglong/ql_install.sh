@@ -13,11 +13,23 @@ echo -e "\e[36m
        ▀                        ▀████▀▀                                 ▀████▀▀
 \e[0m\n"
 
-DOCKER_IMG_NAME="shufflewzc/qinglong"
+echo -------------------------------
+echo "目前推荐版本 - 不会白屏" 
+echo "2.11.0   |   2.11.3"
+echo -------------------------------
+read -r -p "请输入要安装的青龙版本:" ql
+if  [ ! -n "$ql" ] ;then
+ ql="2.11.3"
+ echo "本一键仅支持到2.11.3版本"
+ echo "您设置的当前版本${ql}"
+else
+  echo "您设置的当前版本${ql}"
+fi 
+DOCKER_IMG_NAME="yanyuwangluo/qinglong"
 JD_PATH=""
 SHELL_FOLDER=$(pwd)
 CONTAINER_NAME=""
-TAG="latest"
+TAG="${ql}"
 NETWORK="bridge"
 JD_PORT=5700
 NINJA_PORT=5701
@@ -80,7 +92,8 @@ docker_install() {
 }
 
 docker_install
-warn "Faker系列仓库一键安装配置，一键安装的青龙版本为2.9.3稳定版，小白回车到底，一路默认选择"
+warn "目前因为  jsDelivr 的问题导致部分版本白屏。"
+warn "Faker系列仓库一键安装配置，小白回车到底，一路默认选择"
 # 配置文件保存目录
 echo -n -e "\e[33m一、请输入配置文件保存的绝对路径（示例：/root)，回车默认为当前目录:\e[0m"
 read jd_path
@@ -99,6 +112,7 @@ RAW_PATH=$JD_PATH/ql/raw
 SCRIPT_PATH=$JD_PATH/ql/scripts
 LOG_PATH=$JD_PATH/ql/log
 JBOT_PATH=$JD_PATH/ql/jbot
+DEPS_PATH=$JD_PATH/ql/deps
 NINJA_PATH=$JD_PATH/ql/ninja
 
 # 检测镜像是否存在
@@ -217,7 +231,7 @@ fi
 
 # 配置已经创建完成，开始执行
 log "1.开始创建配置文件目录"
-PATH_LIST=($CONFIG_PATH $DB_PATH $REPO_PATH $RAW_PATH $SCRIPT_PATH $LOG_PATH $JBOT_PATH $NINJA_PATH)
+PATH_LIST=($CONFIG_PATH $DB_PATH $REPO_PATH $RAW_PATH $SCRIPT_PATH $LOG_PATH $JBOT_PATH $NINJA_PATH $DEPS_PATH)
 for i in ${PATH_LIST[@]}; do
     mkdir -p $i
 done
@@ -273,6 +287,7 @@ docker run -dit \
     -v $RAW_PATH:/ql/raw \
     -v $SCRIPT_PATH:/ql/scripts \
     -v $JBOT_PATH:/ql/jbot \
+	-v $DEPS_PATH:/ql/deps \
     -v $NINJA_PATH:/ql/ninja \
     $MAPPING_JD_PORT \
     $MAPPING_NINJA_PORT \
@@ -357,11 +372,11 @@ if [ "$access" != "2" ]; then
     if [ "$(grep -c "token" $CONFIG_PATH/auth.json)" != 0 ]; then
         log "7.开始安装或重装 Ninja"
         if [ "$INSTALL_NINJA" = true ]; then
-            docker exec -it $CONTAINER_NAME bash -c "cd /ql;ps -ef|grep ninja|grep -v grep|awk '{print $1}'|xargs kill -9;rm -rf /ql/ninja;git clone https://ghproxy.com/https://github.com/shufflewzc/Waikiki_ninja.git /ql/ninja;cd /ql/ninja/backend;pnpm install;cp .env.example .env;cp sendNotify.js /ql/scripts/sendNotify.js;sed -i \"s/ALLOW_NUM=40/ALLOW_NUM=100/\" /ql/ninja/backend/.env;pm2 start"
+            docker exec -it $CONTAINER_NAME bash -c "cd /ql;ps -ef|grep ninja|grep -v grep|awk '{print $1}'|xargs kill -9;rm -rf /ql/ninja;git clone https://git.metauniverse-cn.com/https://github.com/shufflewzc/Waikiki_ninja.git /ql/ninja;cd /ql/ninja/backend;pnpm install;cp .env.example .env;cp sendNotify.js /ql/scripts/sendNotify.js;sed -i \"s/ALLOW_NUM=40/ALLOW_NUM=100/\" /ql/ninja/backend/.env;pm2 start"
             docker exec -it $CONTAINER_NAME bash -c "sed -i \"s/ALLOW_NUM=40/ALLOW_NUM=100/\" /ql/ninja/backend/.env && cd /ql/ninja/backend && pm2 start"
         fi
         log "8.开始青龙内部配置"
-        docker exec -it $CONTAINER_NAME bash -c "$(curl -fsSL https://ghproxy.com/https://github.com/shufflewzc/VIP/blob/main/Scripts/sh/1customCDN.sh)"
+        docker exec -it $CONTAINER_NAME bash -c "$(curl -fsSL https://git.metauniverse-cn.com/https://github.com/shufflewzc/VIP/blob/main/Scripts/sh/1customCDN.sh)"
     else
         warn "8.未检测到 token，取消内部配置"
     fi
